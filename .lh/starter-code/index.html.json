@@ -1,0 +1,110 @@
+{
+    "sourceFile": "starter-code/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1689785611446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689785619190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n \n   <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./assets/images/favicon-32x32.png\">\n   \n-  <title>Frontend Mentor | Dictionary web app</title>\n+  <title>Frontend Mentor </title>\n </head>\n <body>\n \n </body>\n"
+                },
+                {
+                    "date": 1689785624539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,8 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-\n-  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./assets/images/favicon-32x32.png\">\n-  \n   <title>Frontend Mentor </title>\n </head>\n <body>\n \n"
+                },
+                {
+                    "date": 1689785982877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-  <title>Frontend Mentor </title>\n+  <title>Dictionary </title>\n </head>\n <body>\n \n </body>\n"
+                },
+                {
+                    "date": 1689786001673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-  <title>Dictionary </title>\n+  <title>Dictionary</title>\n </head>\n <body>\n \n </body>\n"
+                },
+                {
+                    "date": 1689786023270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,10 @@\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <title>Dictionary</title>\n </head>\n <body>\n+  <nav>\n+    \n+  </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786078288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,14 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n+  <link rel=\"stylesheet\" href=\"\">\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n-    \n+\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786083532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-  <link rel=\"stylesheet\" href=\"\">\n+  <link rel=\"stylesheet\" href=\"styles.css\">\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n"
+                },
+                {
+                    "date": 1689786096818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n-\n+    <img>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786105194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n-    <img>\n+    <img src=\"logo.svg\" alt=\"\">\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786159704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n-    <img src=\"logo.svg\" alt=\"\">\n+    <img src=\"logo.svg\" alt=\"logo\">\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786191658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n </head>\n <body>\n   <nav>\n     <img src=\"logo.svg\" alt=\"logo\">\n+    \n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786371265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\n <body>\n   <nav>\n     <img src=\"logo.svg\" alt=\"logo\">\n-    \n+    <h1>Sans Serif</h1>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786483369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,11 @@\n   <title>Dictionary</title>\n </head>\n <body>\n   <nav>\n-    <img src=\"logo.svg\" alt=\"logo\">\n+    <img src=\"assets/images/logo.svg\" alt=\"logo\">\n     <h1>Sans Serif</h1>\n+    <img src=\"\" alt=\"\">\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786493554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\n <body>\n   <nav>\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n-    <h1>Sans Serif</h1>\n+    <p>Sans Serif</p>\n     <img src=\"\" alt=\"\">\n   </nav>\n \n </body>\n"
+                },
+                {
+                    "date": 1689786517679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   <nav>\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n     <p>Sans Serif</p>\n     <img src=\"\" alt=\"\">\n+    <div></div>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786555031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <body>\n   <nav>\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n     <p>Sans Serif</p>\n-    <img src=\"\" alt=\"\">\n+    <img src=\"assets/images/icon-arrow-down.svg\" alt=\"\">\n     <div></div>\n   </nav>\n \n </body>\n"
+                },
+                {
+                    "date": 1689786662952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,11 @@\n <body>\n   <nav>\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n     <p>Sans Serif</p>\n-    <img src=\"assets/images/icon-arrow-down.svg\" alt=\"\">\n+    <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n+    <img src=\"assets/images/icon-moon.svg\" alt=\"icon-moon\">\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786781233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n     <p>Sans Serif</p>\n     <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n-    <img src=\"assets/images/icon-moon.svg\" alt=\"icon-moon\">\n+    <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786842827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,13 @@\n     <p>Sans Serif</p>\n     <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n     <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n+    <!-- Rounded switch -->\n+<label class=\"switch\">\n+  <input type=\"checkbox\">\n+  <span class=\"slider round\"></span>\n+</label>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786850735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n     <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n     <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n     <!-- Rounded switch -->\n-<label class=\"switch\">\n-  <input type=\"checkbox\">\n+    <label class=\"switch\">\n+      <input type=\"checkbox\">\n   <span class=\"slider round\"></span>\n-</label>\n+</labe>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689786859670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n     <!-- Rounded switch -->\n     <label class=\"switch\">\n       <input type=\"checkbox\">\n-  <span class=\"slider round\"></span>\n-</labe>\n+      <span class=\"slider round\"></span>\n+    </labe>\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689787119113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,9 @@\n     <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n     <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n     <!-- Rounded switch -->\n-    <label class=\"switch\">\n-      <input type=\"checkbox\">\n-      <span class=\"slider round\"></span>\n-    </labe>\n+\n   </nav>\n \n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689787162755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,15 @@\n     <p>Sans Serif</p>\n     <img src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\">\n     <div></div>\n     <img src=\"assets/images/icon-moon.svg\" alt=\"moon-icon\">\n-    <!-- Rounded switch -->\n \n   </nav>\n \n+      <!-- Rounded switch -->\n+  <label class=\"switch\">\n+    <input type=\"checkbox\">\n+    <span class=\"slider round\"></span>\n+  </label>\n+\n </body>\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1689785611446,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./assets/images/favicon-32x32.png\">\n  \n  <title>Frontend Mentor | Dictionary web app</title>\n</head>\n<body>\n\n</body>\n</html>"
+        }
+    ]
+}
