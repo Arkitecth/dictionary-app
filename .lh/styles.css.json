@@ -3,104 +3,624 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 152,
             "patches": [
                 {
-                    "date": 1689786045605,
+                    "date": 1689807469189,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
                 },
                 {
-                    "date": 1689786051304,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n * {\n-    \n+    margin: 0;\n+    padding: 0;\n }\n\\ No newline at end of file\n"
+                    "date": 1689807483329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 65%;\n+    width: 75%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689786057314,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n * {\n     margin: 0;\n     padding: 0;\n-}\n\\ No newline at end of file\n+}\n"
+                    "date": 1689807488893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 75%;\n+    width: 50%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689786063408,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+:root {\n+    \n+}\n+\n * {\n     margin: 0;\n     padding: 0;\n }\n"
+                    "date": 1689807499444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 50%;\n+    width: 60%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689786069347,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n-:root {\n-    \n-}\n \n+\n * {\n     margin: 0;\n     padding: 0;\n }\n"
+                    "date": 1689807510070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 60%;\n+    width: 63%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689786800612,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n \n-\n * {\n     margin: 0;\n     padding: 0;\n }\n"
+                    "date": 1689807519786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 63%;\n+    width: 64%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689786896737,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,68 @@\n * {\n     margin: 0;\n     padding: 0;\n }\n+\n+\n+/* The switch - the box around the slider */\n+.switch {\n+    position: relative;\n+    display: inline-block;\n+    width: 60px;\n+    height: 34px;\n+  }\n+  \n+  /* Hide default HTML checkbox */\n+  .switch input {\n+    opacity: 0;\n+    width: 0;\n+    height: 0;\n+  }\n+  \n+  /* The slider */\n+  .slider {\n+    position: absolute;\n+    cursor: pointer;\n+    top: 0;\n+    left: 0;\n+    right: 0;\n+    bottom: 0;\n+    background-color: #ccc;\n+    -webkit-transition: .4s;\n+    transition: .4s;\n+  }\n+  \n+  .slider:before {\n+    position: absolute;\n+    content: \"\";\n+    height: 26px;\n+    width: 26px;\n+    left: 4px;\n+    bottom: 4px;\n+    background-color: white;\n+    -webkit-transition: .4s;\n+    transition: .4s;\n+  }\n+  \n+  input:checked + .slider {\n+    background-color: #2196F3;\n+  }\n+  \n+  input:focus + .slider {\n+    box-shadow: 0 0 1px #2196F3;\n+  }\n+  \n+  input:checked + .slider:before {\n+    -webkit-transform: translateX(26px);\n+    -ms-transform: translateX(26px);\n+    transform: translateX(26px);\n+  }\n+  \n+  /* Rounded sliders */\n+  .slider.round {\n+    border-radius: 34px;\n+  }\n+  \n+  .slider.round:before {\n+    border-radius: 50%;\n+  }\n\\ No newline at end of file\n"
+                    "date": 1689807556432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 56%;\n+    width: 65%;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787315019,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     -webkit-transition: .4s;\n     transition: .4s;\n   }\n   \n-  input:checked + .slider {\n+  /* input:checked + .slider {\n     background-color: #2196F3;\n   }\n   \n   input:focus + .slider {\n@@ -65,5 +65,5 @@\n   }\n   \n   .slider.round:before {\n     border-radius: 50%;\n-  }\n\\ No newline at end of file\n+  } */\n\\ No newline at end of file\n"
+                    "date": 1689807571019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 65%;\n+    width: 56%;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787322051,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,64 +6,64 @@\n \n \n /* The switch - the box around the slider */\n .switch {\n-    position: relative;\n-    display: inline-block;\n-    width: 60px;\n-    height: 34px;\n-  }\n-  \n-  /* Hide default HTML checkbox */\n-  .switch input {\n-    opacity: 0;\n-    width: 0;\n-    height: 0;\n-  }\n-  \n-  /* The slider */\n-  .slider {\n-    position: absolute;\n-    cursor: pointer;\n-    top: 0;\n-    left: 0;\n-    right: 0;\n-    bottom: 0;\n-    background-color: #ccc;\n-    -webkit-transition: .4s;\n-    transition: .4s;\n-  }\n-  \n-  .slider:before {\n-    position: absolute;\n-    content: \"\";\n-    height: 26px;\n-    width: 26px;\n-    left: 4px;\n-    bottom: 4px;\n-    background-color: white;\n-    -webkit-transition: .4s;\n-    transition: .4s;\n-  }\n-  \n-  /* input:checked + .slider {\n-    background-color: #2196F3;\n-  }\n-  \n-  input:focus + .slider {\n-    box-shadow: 0 0 1px #2196F3;\n-  }\n-  \n-  input:checked + .slider:before {\n-    -webkit-transform: translateX(26px);\n-    -ms-transform: translateX(26px);\n-    transform: translateX(26px);\n-  }\n-  \n-  /* Rounded sliders */\n-  .slider.round {\n-    border-radius: 34px;\n-  }\n-  \n-  .slider.round:before {\n-    border-radius: 50%;\n-  } */\n\\ No newline at end of file\n+  position: relative;\n+  display: inline-block;\n+  width: 60px;\n+  height: 34px;\n+}\n+\n+/* Hide default HTML checkbox */\n+.switch input {\n+  opacity: 0;\n+  width: 0;\n+  height: 0;\n+}\n+\n+/* The slider */\n+.slider {\n+  position: absolute;\n+  cursor: pointer;\n+  top: 0;\n+  left: 0;\n+  right: 0;\n+  bottom: 0;\n+  background-color: #ccc;\n+  -webkit-transition: .4s;\n+  transition: .4s;\n+}\n+\n+.slider:before {\n+  position: absolute;\n+  content: \"\";\n+  height: 26px;\n+  width: 26px;\n+  left: 4px;\n+  bottom: 4px;\n+  background-color: white;\n+  -webkit-transition: .4s;\n+  transition: .4s;\n+}\n+\n+/* input:checked + .slider {\n+  background-color: #2196F3;\n+}\n+\n+input:focus + .slider {\n+  box-shadow: 0 0 1px #2196F3;\n+}\n+\n+input:checked + .slider:before {\n+  -webkit-transform: translateX(26px);\n+  -ms-transform: translateX(26px);\n+  transform: translateX(26px);\n+} */\n+\n+/* Rounded sliders */\n+/* .slider.round {\n+  border-radius: 34px;\n+}\n+\n+.slider.round:before {\n+  border-radius: 50%;\n+} */\n\\ No newline at end of file\n"
+                    "date": 1689807616968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n+    width: 56%;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n@@ -205,9 +206,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 56%;\n+   \n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787337544,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   -webkit-transition: .4s;\n   transition: .4s;\n }\n \n-.slider:before {\n+/* .slider:before {\n   position: absolute;\n   content: \"\";\n   height: 26px;\n   width: 26px;\n@@ -42,9 +42,9 @@\n   bottom: 4px;\n   background-color: white;\n   -webkit-transition: .4s;\n   transition: .4s;\n-}\n+} */\n \n /* input:checked + .slider {\n   background-color: #2196F3;\n }\n"
+                    "date": 1689807622531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,8 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    width: 56%;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n@@ -206,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-   \n+    width: 56%;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787344114,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n   -webkit-transition: .4s;\n   transition: .4s;\n }\n \n-/* .slider:before {\n+.slider:before {\n   position: absolute;\n   content: \"\";\n   height: 26px;\n   width: 26px;\n@@ -42,9 +42,9 @@\n   bottom: 4px;\n   background-color: white;\n   -webkit-transition: .4s;\n   transition: .4s;\n-} */\n+}\n \n /* input:checked + .slider {\n   background-color: #2196F3;\n }\n"
+                    "date": 1689807641854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 56%;\n+    width: 1px;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787354411,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   -webkit-transition: .4s;\n   transition: .4s;\n }\n \n-/* input:checked + .slider {\n+input:checked + .slider {\n   background-color: #2196F3;\n }\n \n input:focus + .slider {\n@@ -56,9 +56,9 @@\n input:checked + .slider:before {\n   -webkit-transform: translateX(26px);\n   -ms-transform: translateX(26px);\n   transform: translateX(26px);\n-} */\n+}\n \n /* Rounded sliders */\n /* .slider.round {\n   border-radius: 34px;\n"
+                    "date": 1689807647591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n+    width: 56%;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
                 },
                 {
-                    "date": 1689787374703,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,11 +59,11 @@\n   transform: translateX(26px);\n }\n \n /* Rounded sliders */\n-/* .slider.round {\n+.slider.round {\n   border-radius: 34px;\n }\n \n .slider.round:before {\n   border-radius: 50%;\n\\ No newline at end of file\n-} */\n+}\n\\ No newline at end of file\n"
+                    "date": 1689807656108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,9 +206,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 1px;\n+    width: 1-px;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787408315,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,12 @@\n     padding: 0;\n }\n \n \n+\n+/* Main Styling */\n+\n+\n /* The switch - the box around the slider */\n .switch {\n   position: relative;\n   display: inline-block;\n"
+                    "date": 1689807668057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,8 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    width: 56%;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n@@ -206,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 1-px;\n+    width: 56%;\n }\n \n /* Description */\n .description {\n"
                 },
                 {
-                    "date": 1689787419201,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,14 @@\n \n \n /* Main Styling */\n \n+body {\n+    max-width: 1100px;\n+}\n \n+\n+\n /* The switch - the box around the slider */\n .switch {\n   position: relative;\n   display: inline-block;\n"
+                    "date": 1689807681791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 64%;\n+    width: 56%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689787427519,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n /* Main Styling */\n \n body {\n     max-width: 1100px;\n+    margin: 0 auto;\n }\n \n \n \n"
+                    "date": 1689807708882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 56%;\n+    width: 58%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689787487941,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,14 @@\n     max-width: 1100px;\n     margin: 0 auto;\n }\n \n+nav {\n+    display: flex;\n+}\n \n \n+\n /* The switch - the box around the slider */\n .switch {\n   position: relative;\n   display: inline-block;\n"
+                    "date": 1689807715112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 58%;\n+    width: 60%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689787498777,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n }\n \n nav {\n     display: flex;\n+    justify-content: space-evenly;\n }\n \n \n \n"
+                    "date": 1689807721696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: flex;\n-    width: 60%;\n+    width: 64%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n     \n"
                 },
                 {
-                    "date": 1689787504666,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\n \n nav {\n     display: flex;\n-    justify-content: space-evenly;\n+    justify-content: space-around;\n }\n \n \n \n"
+                    "date": 1689811457849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,9 +213,8 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    display: flex;\n     width: 64%;\n     flex-direction: column;\n     align-content: center;\n     margin: 0 auto;\n"
                 },
                 {
-                    "date": 1689787561070,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,11 @@\n     display: flex;\n     justify-content: space-around;\n }\n \n+.togglers {\n+    display: flex;\n+}\n \n \n /* The switch - the box around the slider */\n .switch {\n"
+                    "date": 1689811677568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,10 +214,8 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     width: 64%;\n-    flex-direction: column;\n-    align-content: center;\n     margin: 0 auto;\n     \n \n }\n"
                 },
                 {
-                    "date": 1689787575287,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n }\n \n .togglers {\n     display: flex;\n+    padding: 20px;\n }\n \n \n /* The switch - the box around the slider */\n"
+                    "date": 1689870798643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,10 +163,9 @@\n \n /* Word View */\n \n main {\n-    display: flex;\n-    flex-direction: column;\n+    display: grid;\n }\n \n \n .word-view {\n"
                 },
                 {
-                    "date": 1689787585503,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n }\n \n .togglers {\n     display: flex;\n-    padding: 0 20px;\n+    padding: 0 30px;\n }\n \n \n /* The switch - the box around the slider */\n"
+                    "date": 1689870807881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,8 +164,9 @@\n /* Word View */\n \n main {\n     display: grid;\n+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;\n }\n \n \n .word-view {\n"
                 },
                 {
-                    "date": 1689788694353,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n :root {\n-    --dark-grey: #757575\n+    --dark-grey: #757575; \n }\n \n \n * {\n"
+                    "date": 1689870820785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,8 +165,9 @@\n \n main {\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;\n+    align-items: center;\n }\n \n \n .word-view {\n"
+                },
+                {
+                    "date": 1689870854890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n /* Word View */\n \n main {\n     display: grid;\n-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;\n+    grid-template-rows: (5, auto);\n     align-items: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1689870872012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n+    /* width: 64%; */\n     margin: 0 auto;\n     \n \n }\n"
+                },
+                {
+                    "date": 1689870981296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n /* Word View */\n \n main {\n     display: grid;\n-    grid-template-rows: (5, auto);\n+    grid-template-rows: repeat(5, auto);\n     align-items: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1689871156550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,8 +165,9 @@\n \n main {\n     display: grid;\n     grid-template-rows: repeat(5, auto);\n+    grid-template-columns: 1fr 1fr 1fr;\n     align-items: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1689871182904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,8 +175,9 @@\n     text-align: center;\n     margin-top: 4rem;\n     display: flex;\n     justify-content: space-around;\n+    grid-column: 2;\n }\n .word-group h1 {\n     font-size: 4rem;\n }\n"
+                },
+                {
+                    "date": 1689871204373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,8 +179,10 @@\n     grid-column: 2;\n }\n .word-group h1 {\n     font-size: 4rem;\n+    gap: 30px\n+    ;\n }\n \n .word-group p {\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871216283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,10 +179,9 @@\n     grid-column: 2;\n }\n .word-group h1 {\n     font-size: 4rem;\n-    gap: 30px\n-    ;\n+    gap: 30px;\n }\n \n .word-group p {\n     text-align: left;\n@@ -200,8 +199,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n+    grid-row: 2;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689871235126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,9 +199,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    grid-row: 2;\n+    grid-row: 1;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689871272289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,9 +199,10 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    grid-row: 1;\n+    grid-row: 2;\n+    grid-column: 2;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689871284816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n     grid-row: 2;\n-    grid-column: 2;\n+    grid-column: 1;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689871335702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,8 +201,9 @@\n     gap: 20px;\n     margin-top: 3rem;\n     grid-row: 2;\n     grid-column: 1;\n+    justify-self: end;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689871368437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,9 +175,9 @@\n     text-align: center;\n     margin-top: 4rem;\n     display: flex;\n     justify-content: space-around;\n-    grid-column: 2;\n+    grid-column: 1;\n }\n .word-group h1 {\n     font-size: 4rem;\n     gap: 30px;\n"
+                },
+                {
+                    "date": 1689871373938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,8 +176,9 @@\n     margin-top: 4rem;\n     display: flex;\n     justify-content: space-around;\n     grid-column: 1;\n+    justify-self: end;\n }\n .word-group h1 {\n     font-size: 4rem;\n     gap: 30px;\n"
+                },
+                {
+                    "date": 1689871400954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,8 +167,9 @@\n     display: grid;\n     grid-template-rows: repeat(5, auto);\n     grid-template-columns: 1fr 1fr 1fr;\n     align-items: center;\n+    grid-auto-flow: row;\n }\n \n \n .word-view {\n"
+                },
+                {
+                    "date": 1689871417467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,8 +223,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     /* width: 64%; */\n+    grid-row: 3;\n     margin: 0 auto;\n     \n \n }\n"
+                },
+                {
+                    "date": 1689871427115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,8 +224,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     /* width: 64%; */\n     grid-row: 3;\n+    justify-self: end;\n     margin: 0 auto;\n     \n \n }\n"
+                },
+                {
+                    "date": 1689871458620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,27 +163,21 @@\n \n /* Word View */\n \n main {\n-    display: grid;\n-    grid-template-rows: repeat(5, auto);\n-    grid-template-columns: 1fr 1fr 1fr;\n-    align-items: center;\n-    grid-auto-flow: row;\n+    display: flex;\n+    flex-direction: column;\n }\n \n \n .word-view {\n     text-align: center;\n     margin-top: 4rem;\n     display: flex;\n     justify-content: space-around;\n-    grid-column: 1;\n-    justify-self: end;\n }\n .word-group h1 {\n     font-size: 4rem;\n-    gap: 30px;\n }\n \n .word-group p {\n     text-align: left;\n@@ -201,11 +195,8 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    grid-row: 2;\n-    grid-column: 1;\n-    justify-self: end;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n@@ -222,11 +213,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    /* width: 64%; */\n-    grid-row: 3;\n-    justify-self: end;\n+    width: 64%;\n     margin: 0 auto;\n     \n \n }\n"
+                },
+                {
+                    "date": 1689871614453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,11 +213,10 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n+    width: 6;\n     margin: 0 auto;\n-    \n \n }\n .description p {\n     color: var(--dark-grey);\n"
+                },
+                {
+                    "date": 1689871625041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,12 +213,16 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 6;\n+    \n     margin: 0 auto;\n \n }\n+\n+.flex {\n+    display: flex;\n+}\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689871696891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,8 +220,9 @@\n }\n \n .flex {\n     display: flex;\n+    justify-content: space-around;\n }\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871704114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n }\n \n .flex {\n     display: flex;\n-    justify-content: space-around;\n+    justify-content: space-between;\n }\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871710411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n }\n \n .flex {\n     display: flex;\n-    justify-content: space-between;\n+    justify-content: space-evenly;\n }\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871730917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n }\n \n .flex {\n     display: flex;\n-    justify-content: space-evenly;\n+    justify-content: center;\n }\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871825789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,13 +217,8 @@\n     \n     margin: 0 auto;\n \n }\n-\n-.flex {\n-    display: flex;\n-    justify-content: center;\n-}\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689871838235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,9 +213,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    \n+    width: 64%;\n     margin: 0 auto;\n \n }\n .description p {\n"
+                },
+                {
+                    "date": 1689871948654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,8 +217,12 @@\n     width: 64%;\n     margin: 0 auto;\n \n }\n+\n+.center {\n+    position: absolute;\n+}\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689871958539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n \n }\n \n .center {\n-    position: absolute;\n+    position: relative;\n }\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689871970205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,8 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     width: 64%;\n     margin: 0 auto;\n-\n }\n \n .center {\n     position: relative;\n@@ -226,8 +225,9 @@\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n+    position: absolute;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689871982464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,8 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n+    top: 0;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689871994142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    top: 0;\n+    bottom: 0;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872001144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    bottom: 0;\n+    top: 0;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872006465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,8 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    top: 0;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872014392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,8 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n+    top: 30px;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872020316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    top: 30px;\n+    top: 100pxx;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872030229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,9 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    top: 100pxx;\n+    bottom: 100px;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872042083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,8 @@\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n     position: absolute;\n-    bottom: 100px;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872049992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n     padding: 20px 1px;\n-    position: absolute;\n+\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872064823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,8 +227,12 @@\n     font-size: 1.25rem;\n     padding: 20px 1px;\n \n }\n+\n+.meaning {\n+    position: relative;\n+}\n ul {\n     text-align: left;\n     padding: 10px 20px;\n     list-style: none;\n"
+                },
+                {
+                    "date": 1689872074017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -229,9 +229,9 @@\n \n }\n \n .meaning {\n-    position: relative;\n+    position: absolute;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872080097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,8 +230,9 @@\n }\n \n .meaning {\n     position: absolute;\n+    top: 0;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872092754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,9 +230,9 @@\n }\n \n .meaning {\n     position: absolute;\n-    top: 0;\n+    top: 30px;\n }\n ul {\n     text-align: left;\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1689872106321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -228,12 +228,8 @@\n     padding: 20px 1px;\n \n }\n \n-.meaning {\n-    position: absolute;\n-    top: 30px;\n-}\n ul {\n     text-align: left;\n     padding: 10px 20px;\n     list-style: none;\n"
+                },
+                {
+                    "date": 1689872202719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,8 +220,9 @@\n \n .center {\n     position: relative;\n }\n+\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689872208242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,8 +208,11 @@\n     height: 0;\n     width: 56%;\n }\n \n+.center {\n+    position: relative;\n+}\n /* Description */\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n@@ -217,12 +220,10 @@\n     width: 64%;\n     margin: 0 auto;\n }\n \n-.center {\n-    position: relative;\n-}\n \n+\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689872214503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n+    position: absolute;\n     margin: 0 auto;\n }\n \n \n"
+                },
+                {
+                    "date": 1689872221469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    position: absolute;\n+    width: 64%;\n     margin: 0 auto;\n }\n \n \n"
+                },
+                {
+                    "date": 1689872228974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,11 +208,8 @@\n     height: 0;\n     width: 56%;\n }\n \n-.center {\n-    position: relative;\n-}\n /* Description */\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n"
+                },
+                {
+                    "date": 1689872234737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,8 +208,11 @@\n     height: 0;\n     width: 56%;\n }\n \n+.center {\n+    \n+}\n /* Description */\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n"
+                },
+                {
+                    "date": 1689872250032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,11 +208,8 @@\n     height: 0;\n     width: 56%;\n }\n \n-.center {\n-    \n-}\n /* Description */\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n"
+                },
+                {
+                    "date": 1689872374612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n+    position: relative;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872392337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,8 +197,11 @@\n     gap: 20px;\n     margin-top: 3rem;\n     position: relative;\n }\n+.meaning {\n+    \n+}\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n     font-weight: 700;\n"
+                },
+                {
+                    "date": 1689872397883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -198,9 +198,9 @@\n     margin-top: 3rem;\n     position: relative;\n }\n .meaning {\n-    \n+    position: absolute;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872406500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,8 +199,9 @@\n     position: relative;\n }\n .meaning {\n     position: absolute;\n+    top: 20px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872413277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,9 +199,9 @@\n     position: relative;\n }\n .meaning {\n     position: absolute;\n-    top: 20px;\n+    top: 50px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872423869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,9 +199,10 @@\n     position: relative;\n }\n .meaning {\n     position: absolute;\n-    top: 50px;\n+    top: 30px;\n+    padding: 20px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872441992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    padding: 20px;\n+    right: 100px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872447786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    right: 100px;\n+    left: 0;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872457672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    left: 0;\n+    left: 90px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872463279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    left: 90px;\n+    left: 120px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872469436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    left: 120px;\n+    left: 150px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872478860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    left: 150px;\n+    left: 180px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872484353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,9 +200,9 @@\n }\n .meaning {\n     position: absolute;\n     top: 30px;\n-    left: 180px;\n+    left: 195px;\n }\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n"
+                },
+                {
+                    "date": 1689872516426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,15 +195,9 @@\n     justify-content: center;\n     align-items: center;\n     gap: 20px;\n     margin-top: 3rem;\n-    position: relative;\n }\n-.meaning {\n-    position: absolute;\n-    top: 30px;\n-    left: 195px;\n-}\n .speech-part {\n     text-align: left;\n     font-size: 2rem;\n     font-weight: 700;\n@@ -223,10 +217,10 @@\n     width: 64%;\n     margin: 0 auto;\n }\n \n+\\\n \n-\n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n     font-size: 1.25rem;\n"
+                },
+                {
+                    "date": 1689872867380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,10 +163,9 @@\n \n /* Word View */\n \n main {\n-    display: flex;\n-    flex-direction: column;\n+    display: grid;\n }\n \n \n .word-view {\n@@ -217,9 +216,8 @@\n     width: 64%;\n     margin: 0 auto;\n }\n \n-\\\n \n .description p {\n     color: var(--dark-grey);\n     text-align: left;\n"
+                },
+                {
+                    "date": 1689872890450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,8 +164,9 @@\n /* Word View */\n \n main {\n     display: grid;\n+    grid-template-rows: 1fr 1fr 1fr 1fr;\n }\n \n \n .word-view {\n"
+                },
+                {
+                    "date": 1689872907396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,9 +213,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n+    /* width: 64%; */\n     margin: 0 auto;\n }\n \n \n"
+                },
+                {
+                    "date": 1689873084012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,8 +215,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     /* width: 64%; */\n     margin: 0 auto;\n+    justify-self: end;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873389605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,10 +163,10 @@\n \n /* Word View */\n \n main {\n-    display: grid;\n-    grid-template-rows: 1fr 1fr 1fr 1fr;\n+    display: flex;\n+    flex-direction: column;\n }\n \n \n .word-view {\n@@ -213,11 +213,10 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    /* width: 64%; */\n+    width: 64%;\n     margin: 0 auto;\n-    justify-self: end;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873399690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,10 +213,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n-    margin: 0 auto;\n+    display: grid;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873407222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,8 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: grid;\n+    grid-template-rows: 1fr;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873413558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: grid;\n-    grid-template-rows: 1fr;\n+    grid-template-rows: 1fr 1fr 1fr;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873508710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,8 +215,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n+    justify-items: center;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873560691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n-    justify-items: center;\n+    justify-items: start;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873642444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,8 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n+    width: 646px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873689016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,8 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    width: 646px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873783692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,8 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n+    margin-left: 20px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873794163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 20px;\n+    margin-left: 100px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873800700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 100px;\n+    margin-left: 500px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873808930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 500px;\n+    margin-left: 200px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873816803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 200px;\n+    margin-left: 190px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873825974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 190px;\n+    margin-left: 170px;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873848291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 170px;\n+    margin-left: 50%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873875284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 50%;\n+    margin-left: 30%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873881963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 30%;\n+    margin-left: 10%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873901780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 10%;\n+    margin-left: 17%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873912946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 17%;\n+    margin-left: 18%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873919823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 2rem; */\n     display: grid;\n     grid-template-rows: 1fr 1fr 1fr;\n     justify-items: start;\n-    margin-left: 18%;\n+    margin-left: 17.5%;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689873953166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,11 +213,8 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    display: grid;\n-    grid-template-rows: 1fr 1fr 1fr;\n-    justify-items: start;\n     margin-left: 17.5%;\n }\n \n \n"
+                },
+                {
+                    "date": 1689873994843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,8 +213,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n+    width: 64%;\n     margin-left: 17.5%;\n }\n \n \n"
+                },
+                {
+                    "date": 1689874137184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n     width: 64%;\n-    margin-left: 17.5%;\n+    /* margin-left: 17.5%; */\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689874154265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,8 +215,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     width: 64%;\n     /* margin-left: 17.5%; */\n+    display: flex;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689874160565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,9 @@\n     margin: 0 auto;\n     margin-top: 2rem; */\n     width: 64%;\n     /* margin-left: 17.5%; */\n-    display: flex;\n+    margin: 0 auto;\n }\n \n \n .description p {\n"
+                },
+                {
+                    "date": 1689874191161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 56%;\n+    width: 40%;\n }\n \n /* Description */\n .description {\n"
+                },
+                {
+                    "date": 1689874200016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 40%;\n+    width: 45%;\n }\n \n /* Description */\n .description {\n"
+                },
+                {
+                    "date": 1689874229435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    width: 45%;\n+    max-width: ;width: 56%;\n }\n \n /* Description */\n .description {\n"
+                },
+                {
+                    "date": 1689874319688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n }\n .grey-rule {\n     border: 1px solid var(--lighter-grey);\n     height: 0;\n-    max-width: ;width: 56%;\n+    width: 56%;\n }\n \n /* Description */\n .description {\n"
+                },
+                {
+                    "date": 1689874569614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -282,6 +282,8 @@\n         font-size: 16px;\n     }\n }\n \n+@media screen and (max-width:768px) {\n \n \n+\n"
+                },
+                {
+                    "date": 1689874580104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -283,7 +283,9 @@\n     }\n }\n \n @media screen and (max-width:768px) {\n+    \n+}\n \n \n \n"
+                },
+                {
+                    "date": 1689874642886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -283,9 +283,11 @@\n     }\n }\n \n @media screen and (max-width:768px) {\n-    \n+    nav {\n+        \n+    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1689874658466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,9 +284,9 @@\n }\n \n @media screen and (max-width:768px) {\n     nav {\n-        \n+        justify-content: space-evenly;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1689874665880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,9 +284,9 @@\n }\n \n @media screen and (max-width:768px) {\n     nav {\n-        justify-content: space-evenly;\n+        justify-content: space-between;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1689874678950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -285,8 +285,9 @@\n \n @media screen and (max-width:768px) {\n     nav {\n         justify-content: space-between;\n+        padding: 20px;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1689874711593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -287,8 +287,11 @@\n     nav {\n         justify-content: space-between;\n         padding: 20px;\n     }\n+    input[type=\"text\"] {\n+        \n+    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1689874718862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -288,9 +288,9 @@\n         justify-content: space-between;\n         padding: 20px;\n     }\n     input[type=\"text\"] {\n-        \n+        width: 689px;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1689874798245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,14 +162,8 @@\n \n \n /* Word View */\n \n-main {\n-    display: flex;\n-    flex-direction: column;\n-}\n-\n-\n .word-view {\n     text-align: center;\n     margin-top: 4rem;\n     display: flex;\n@@ -290,8 +284,9 @@\n     }\n     input[type=\"text\"] {\n         width: 689px;\n     }\n+    \n }\n \n \n \n"
+                },
+                {
+                    "date": 1689874804489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,8 +284,12 @@\n     }\n     input[type=\"text\"] {\n         width: 689px;\n     }\n+\n+    .word-view {\n+        \n+    }\n     \n }\n \n \n"
+                },
+                {
+                    "date": 1689874825413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -286,9 +286,9 @@\n         width: 689px;\n     }\n \n     .word-view {\n-        \n+        justify-content: space-between;\n     }\n     \n }\n \n"
+                },
+                {
+                    "date": 1689874833779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -287,8 +287,9 @@\n     }\n \n     .word-view {\n         justify-content: space-between;\n+        padding: 20px;\n     }\n     \n }\n \n"
+                },
+                {
+                    "date": 1689874871075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -289,8 +289,20 @@\n     .word-view {\n         justify-content: space-between;\n         padding: 20px;\n     }\n+\n+    .speech-part {\n+        text-align: left;\n+        font-size: 2rem;\n+        font-weight: 700;\n+        font-style: italic;\n+    }\n+    .grey-rule {\n+        border: 1px solid var(--lighter-grey);\n+        height: 0;\n+        width: 56%;\n+    }\n     \n }\n \n \n"
+                },
+                {
+                    "date": 1689874891724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -292,11 +292,9 @@\n     }\n \n     .speech-part {\n         text-align: left;\n-        font-size: 2rem;\n-        font-weight: 700;\n-        font-style: italic;\n+        font-size: 24px;\n     }\n     .grey-rule {\n         border: 1px solid var(--lighter-grey);\n         height: 0;\n"
+                },
+                {
+                    "date": 1689874993242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -290,8 +290,12 @@\n         justify-content: space-between;\n         padding: 20px;\n     }\n \n+    .speech-part-group {\n+        justify-content: space-between;\n+    }\n+\n     .speech-part {\n         text-align: left;\n         font-size: 24px;\n     }\n"
+                },
+                {
+                    "date": 1689875003268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -292,8 +292,9 @@\n     }\n \n     .speech-part-group {\n         justify-content: space-between;\n+        padding: 20px;\n     }\n \n     .speech-part {\n         text-align: left;\n"
+                },
+                {
+                    "date": 1689875061923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -302,9 +302,9 @@\n     }\n     .grey-rule {\n         border: 1px solid var(--lighter-grey);\n         height: 0;\n-        width: 56%;\n+        width: 608px;\n     }\n     \n }\n \n"
+                },
+                {
+                    "date": 1689875119295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -304,8 +304,11 @@\n         border: 1px solid var(--lighter-grey);\n         height: 0;\n         width: 608px;\n     }\n+    .description {\n+        text-align: left;\n+    }\n     \n }\n \n \n"
+                },
+                {
+                    "date": 1689875127387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -306,8 +306,9 @@\n         width: 608px;\n     }\n     .description {\n         text-align: left;\n+        margin: 0;\n     }\n     \n }\n \n"
+                },
+                {
+                    "date": 1689875139211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,8 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n+        padding: 20px;\n     }\n     \n }\n \n"
+                },
+                {
+                    "date": 1689875163039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,8 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n+        width: 688px;\n         padding: 20px;\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1689875174435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,9 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n-        width: 688px;\n+        width: 650px;\n         padding: 20px;\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1689875199624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,9 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n-        width: 650px;\n+        width: 620px;\n         padding: 20px;\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1689875208413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,9 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n-        width: 620px;\n+        width: 600x;\n         padding: 20px;\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1689875229675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -307,11 +307,15 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n-        width: 600x;\n+        width: 600px;\n         padding: 20px;\n     }\n+\n+    ul {\n+        width: 626px;\n+    }\n     \n }\n \n \n"
+                },
+                {
+                    "date": 1689875247274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -311,9 +311,9 @@\n         width: 600px;\n         padding: 20px;\n     }\n \n-    ul {\n+    ul li {\n         width: 626px;\n     }\n     \n }\n"
+                },
+                {
+                    "date": 1689875260548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -311,12 +311,9 @@\n         width: 600px;\n         padding: 20px;\n     }\n \n-    ul li {\n-        width: 626px;\n-    }\n-    \n+\n }\n \n \n \n"
+                },
+                {
+                    "date": 1689875374114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -276,9 +276,9 @@\n         font-size: 16px;\n     }\n }\n \n-@media screen and (max-width:768px) {\n+@media screen and (min-width:375px) and (max-width:768px) {\n     nav {\n         justify-content: space-between;\n         padding: 20px;\n     }\n@@ -307,9 +307,9 @@\n     }\n     .description {\n         text-align: left;\n         margin: 0;\n-        width: 600px;\n+        width: 500px;\n         padding: 20px;\n     }\n \n \n"
+                },
+                {
+                    "date": 1689875400065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 64%;\n+    width: 63%;\n     /* margin-left: 17.5%; */\n     margin: 0 auto;\n }\n \n"
+                },
+                {
+                    "date": 1689875405892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 63%;\n+    width: 60%;\n     /* margin-left: 17.5%; */\n     margin: 0 auto;\n }\n \n"
+                },
+                {
+                    "date": 1689875416483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 60%;\n+    width: 66%;\n     /* margin-left: 17.5%; */\n     margin: 0 auto;\n }\n \n"
+                },
+                {
+                    "date": 1689875481937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n .description {\n     /* width: fit-content;\n     margin: 0 auto;\n     margin-top: 2rem; */\n-    width: 66%;\n+    width: 65%;\n     /* margin-left: 17.5%; */\n     margin: 0 auto;\n }\n \n@@ -276,9 +276,9 @@\n         font-size: 16px;\n     }\n }\n \n-@media screen and (min-width:375px) and (max-width:768px) {\n+@media screen and (min-width:580px) and (max-width:768px) {\n     nav {\n         justify-content: space-between;\n         padding: 20px;\n     }\n"
+                },
+                {
+                    "date": 1689875549417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,8 +244,15 @@\n     padding: 0 20px;\n }\n \n \n+/*  */\n+\n+\n+\n+\n+\n+\n /* Mobile Styels */\n \n @media screen and (max-width:375px) {\n   \n"
+                },
+                {
+                    "date": 1689875555661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,9 @@\n     padding: 0 20px;\n }\n \n \n-/*  */\n+/* Dynamic Styles */\n \n \n \n \n"
                 }
             ],
-            "date": 1689786045605,
+            "date": 1689807469189,
             "name": "Commit-0",
-            "content": "* {\n    \n}"
+            "content": ":root {\n    --dark-grey: #757575; \n    --purple:#a445ed; \n    --light-grey:#f4f4f4; \n    --dark-three:#2d2d2d; \n    --lighter-grey:#e9e9e9; \n}\n\n\n* {\n    margin: 0;\n    padding: 0;\n}\n\n\n\n/* Main Styling */\nbody {\n    max-width: 1100px;\n    margin: 0 auto;\n    font-family: sans-serif;\n    color: var(--dark-three);\n}\n\n\n/* Light Styling */\n\n/* Nav Styling */\nnav {\n    display: flex;\n    justify-content: space-around;\n    margin-top: 3rem;\n}\n\n.right {\n    display: flex;\n    gap: 2rem;\n}\n\n.fonts {\n    display: flex;\n    gap: 1rem;\n    align-items: center;\n    font-weight: 600;\n}\n\n.ruler {\n    width: 1px;\n    background-color: #e9e9e9;\n}\n\n.togglers {\n    display: flex;\n    gap: 2rem;\n    align-items: center;\n}\n\n\n\n/* The switch - the box around the slider */\n.switch {\n  position: relative;\n  display: inline-block;\n  width: 40px;\n  height: 20px;\n}\n\n/* Hide default HTML checkbox */\n.switch input {\n  opacity: 0;\n  width: 0;\n  height: 0;\n}\n\n/* The slider */\n.slider {\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: var(--dark-grey);\n  -webkit-transition: .4s;\n  transition: .4s;\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 14px;\n  width: 14px;\n  left: 3px;\n  bottom: 3px;\n  background-color: white;\n  -webkit-transition: .4s;\n  transition: .4s;\n}\n\ninput:checked + .slider {\n  background-color: var(--purple)\n}\n\ninput:focus + .slider {\n  box-shadow: 0 0 1px var(--purple)\n}\n\ninput:checked + .slider:before {\n  -webkit-transform: translateX(20px);\n  -ms-transform: translateX(20px);\n  transform: translateX(20px);\n}\n\n/* Rounded sliders */\n.slider.round {\n  border-radius: 34px;\n}\n\n.slider.round:before {\n  border-radius: 50%;\n}\n\n\n\n/* Search */\n\n.search {\n    text-align: center;\n    margin-top: 4rem;\n    display: flex;\n    justify-content: center;\n}\n\ninput[type=\"text\"] {\n    width:60%; \n    height: 1.5rem;\n    padding: 1rem;\n    border-radius: 16px;\n    border: none;\n    background-color: var(--light-grey);\n    outline: none;\n    font-size: 20px;\n    font-weight: 700; \n  \n}\n\ninput[type=\"text\"]:active, \ninput[type=\"text\"]:focus {\n    border: 1px solid var(--purple);\n}\n\n\ninput[type=\"text\"]::placeholder {\n    opacity: 0.25;\n}\n\n.search-icon {\n    transform: translate(-50px,1px);\n    text-align: center;\n}\n\n\n\n/* Word View */\n\nmain {\n    display: flex;\n    flex-direction: column;\n}\n\n\n.word-view {\n    text-align: center;\n    margin-top: 4rem;\n    display: flex;\n    justify-content: space-around;\n}\n.word-group h1 {\n    font-size: 4rem;\n}\n\n.word-group p {\n    text-align: left;\n    font-size: 1.5rem;\n    color: var(--purple);\n    font-weight: 400;\n    padding-top: 0.5rem;\n    letter-spacing: 2px;\n}\n\n\n/* Speech Part(noun, pronoun, verb) */\n.speech-part-group {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 20px;\n    margin-top: 3rem;\n}\n.speech-part {\n    text-align: left;\n    font-size: 2rem;\n    font-weight: 700;\n    font-style: italic;\n}\n.grey-rule {\n    border: 1px solid var(--lighter-grey);\n    height: 0;\n    width: 56%;\n}\n\n/* Description */\n.description {\n    /* width: fit-content;\n    margin: 0 auto;\n    margin-top: 2rem; */\n    display: flex;\n    width: 65%;\n    flex-direction: column;\n    align-content: center;\n    margin: 0 auto;\n    \n\n}\n.description p {\n    color: var(--dark-grey);\n    text-align: left;\n    font-size: 1.25rem;\n    padding: 20px 1px;\n}\nul {\n    text-align: left;\n    padding: 10px 20px;\n    list-style: none;\n}\nul li::before {\n    content: \"\\2022\";\n    width: 1rem;\n    font-weight: bold;\n    display: inline-block;\n    margin-left: -1em;\n    color: var(--purple);\n}\nul li{\n    padding: 5px;\n    color: var(--dark-three);\n}\n.synonymn span {\n    color: var(--purple);\n    padding: 0 20px;\n}\n\n\n/* Mobile Styels */\n\n@media screen and (max-width:375px) {\n  \n    input[type=\"text\"] {\n        width: 327px;\n    }\n    .search {\n        margin-left: 10px;\n    }\n\n    .word-group h1 {\n        font-size: 32px;\n    }\n\n    .icon-play {\n        width: 48px;\n    }\n\n    .description {\n        width: 275px;\n    }\n\n    .speech-part {\n        font-size: 18px;\n    }\n\n    .description p {\n        font-size: 16px;\n    }\n}\n\n\n\n"
         }
     ]
 }

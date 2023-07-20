@@ -163,12 +163,6 @@ input[type="text"]::placeholder {
 
 /* Word View */
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .word-view {
     text-align: center;
     margin-top: 4rem;
@@ -214,21 +208,20 @@ main {
     /* width: fit-content;
     margin: 0 auto;
     margin-top: 2rem; */
-    display: flex;
     width: 65%;
-    border:  1px solid red;
-    flex-direction: column;
-    align-content: center;
+    /* margin-left: 17.5%; */
     margin: 0 auto;
-    
-
 }
+
+
 .description p {
     color: var(--dark-grey);
     text-align: left;
     font-size: 1.25rem;
     padding: 20px 1px;
+
 }
+
 ul {
     text-align: left;
     padding: 10px 20px;
@@ -250,6 +243,13 @@ ul li{
     color: var(--purple);
     padding: 0 20px;
 }
+
+
+/* Dynamic Styles */
+
+
+
+
 
 
 /* Mobile Styels */
@@ -282,6 +282,44 @@ ul li{
     .description p {
         font-size: 16px;
     }
+}
+
+@media screen and (min-width:580px) and (max-width:768px) {
+    nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+    input[type="text"] {
+        width: 689px;
+    }
+
+    .word-view {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .speech-part-group {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .speech-part {
+        text-align: left;
+        font-size: 24px;
+    }
+    .grey-rule {
+        border: 1px solid var(--lighter-grey);
+        height: 0;
+        width: 608px;
+    }
+    .description {
+        text-align: left;
+        margin: 0;
+        width: 500px;
+        padding: 20px;
+    }
+
+
 }
 
 
