@@ -1,0 +1,846 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 207,
+            "patches": [
+                {
+                    "date": 1689876012195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689878039255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+class App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878048887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n-class App\n\\ No newline at end of file\n+class App {\n+    constructor() {\n+        \n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878071831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n class App {\n     constructor() {\n+\n+    }\n+\n+    run() {\n         \n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878078022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,6 @@\n class App {\n-    constructor() {\n \n-    }\n+    run() {\n \n-    run() {\n-        \n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878095210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n class App {\n-\n     run() {\n \n     }\n-}\n\\ No newline at end of file\n+}\n+\n+const app = App(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878152801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n \n     }\n }\n \n-const app = App(); \n\\ No newline at end of file\n+const app = new App(); \n+app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878166857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class App {\n     run() {\n-\n+        alert(\"HELLO FROM THE OUTSIDE!!\")\n     }\n }\n \n const app = new App(); \n"
+                },
+                {
+                    "date": 1689878224886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class App {\n     run() {\n-        alert(\"HELLO FROM THE OUTSIDE!!\")\n+        alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n }\n \n const app = new App(); \n"
+                },
+                {
+                    "date": 1689878237346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,10 @@\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n }\n \n+class UI {\n+    \n+}\n+\n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878363579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     }\n }\n \n class UI {\n-    \n+    constructor(arrowDown)\n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878396853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n     }\n }\n \n class UI {\n-    constructor(arrowDown)\n+    constructor(body, arrowDown) {\n+        this.body = body\n+    }\n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878417066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n class App {\n+    \n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n }\n \n class UI {\n     constructor(body, arrowDown) {\n-        this.body = body\n+        this.body = body; \n+        this.arrowDown = arrowDown; \n     }\n }\n \n const app = new App(); \n"
+                },
+                {
+                    "date": 1689878435951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n class App {\n-    \n+    constructor() {\n+        \n+    }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n }\n"
+                },
+                {
+                    "date": 1689878449269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class App {\n     constructor() {\n-        \n+        this.ui = new UI()\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n"
+                },
+                {
+                    "date": 1689878456869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n class App {\n     constructor() {\n+        this.arrowDown = \n         this.ui = new UI()\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n"
+                },
+                {
+                    "date": 1689878480271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class App {\n     constructor() {\n-        this.arrowDown = \n+        this.arrowDown = document.querySelector(\".arrow-down\")\n         this.ui = new UI()\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n"
+                },
+                {
+                    "date": 1689878489342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class App {\n     constructor() {\n-        this.arrowDown = document.querySelector(\".arrow-down\")\n-        this.ui = new UI()\n+        this.arrowDown = document.querySelector(\".arrow-down\"); \n+        this.ui = new UI(this.arrowDown)\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n"
+                },
+                {
+                    "date": 1689878497432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n class App {\n     constructor() {\n         this.arrowDown = document.querySelector(\".arrow-down\"); \n+        this.body = \n         this.ui = new UI(this.arrowDown)\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n"
+                },
+                {
+                    "date": 1689878505064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class App {\n     constructor() {\n         this.arrowDown = document.querySelector(\".arrow-down\"); \n-        this.body = \n+        this.body = document.querySelector(\"body\")\n         this.ui = new UI(this.arrowDown)\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n"
+                },
+                {
+                    "date": 1689878511397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n     constructor() {\n         this.arrowDown = document.querySelector(\".arrow-down\"); \n-        this.body = document.querySelector(\"body\")\n-        this.ui = new UI(this.arrowDown)\n+        this.body = document.querySelector(\"body\"); \n+        this.ui = new UI(body, this.arrowDown)\n     }\n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n"
+                },
+                {
+                    "date": 1689878526219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n         this.arrowDown = document.querySelector(\".arrow-down\"); \n         this.body = document.querySelector(\"body\"); \n         this.ui = new UI(body, this.arrowDown)\n     }\n+    \n     run() {\n         alert(\"HELLO FROM THE OUTSIDE!!\"); \n     }\n }\n"
+                },
+                {
+                    "date": 1689878580383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,13 @@\n         this.arrowDown = document.querySelector(\".arrow-down\"); \n         this.body = document.querySelector(\"body\"); \n         this.ui = new UI(body, this.arrowDown)\n     }\n-    \n+\n+\n+\n     run() {\n-        alert(\"HELLO FROM THE OUTSIDE!!\"); \n+        this.arrowDown.t\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689878590017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n \n \n     run() {\n-        this.arrowDown.t\n+        this.arrowDown.addEventListener(\"click\")\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689878720538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,17 @@\n class App {\n     constructor() {\n-        this.arrowDown = document.querySelector(\".arrow-down\"); \n+        this._arrowDownarrowDown = document.querySelector(\".arrow-down\"); \n         this.body = document.querySelector(\"body\"); \n         this.ui = new UI(body, this.arrowDown)\n     }\n \n \n \n     run() {\n-        this.arrowDown.addEventListener(\"click\")\n+        this.arrowDown.addEventListener(\"click\", () => {\n+            this.ui.\n+        })\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689878727018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n     constructor() {\n-        this._arrowDownarrowDown = document.querySelector(\".arrow-down\"); \n-        this.body = document.querySelector(\"body\"); \n-        this.ui = new UI(body, this.arrowDown)\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._ui = new UI(body, this.arrowDown)\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1689878732955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n \n \n     run() {\n-        this.arrowDown.addEventListener(\"click\", () => {\n+        this._arrowDown.addEventListener(\"click\", () => {\n             this.ui.\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689878766868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n-            this.ui.\n+            this._ui.\n         })\n     }\n }\n \n@@ -18,8 +18,9 @@\n     constructor(body, arrowDown) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n+    \n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878862188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n class App {\n-    constructor() {\n-        this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(body, this.arrowDown)\n-    }\n \n+    arrowDown = document.querySelector(\".arrow-down\"); \n+    body = document.querySelector(\"body\"); \n+    ui = new UI(body, this.arrowDown)\n \n \n+\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.\n         })\n@@ -18,9 +17,9 @@\n     constructor(body, arrowDown) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n-    \n+\n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689878887546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n \n-    arrowDown = document.querySelector(\".arrow-down\"); \n-    body = document.querySelector(\"body\"); \n-    ui = new UI(body, this.arrowDown)\n+    this._arrowDown = document.querySelector(\".arrow-down\"); \n+    this._body = document.querySelector(\"body\"); \n+    this._ui = new UI(body, this.arrowDown)\n \n \n \n     run() {\n"
+                },
+                {
+                    "date": 1689878899983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n class App {\n+    constructor() {\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._ui = new UI(body, this.arrowDown)\n+    }\n \n-    this._arrowDown = document.querySelector(\".arrow-down\"); \n-    this._body = document.querySelector(\"body\"); \n-    this._ui = new UI(body, this.arrowDown)\n \n \n-\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.\n         })\n@@ -17,9 +18,9 @@\n     constructor(body, arrowDown) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n-\n+    \n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689879012156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n class App {\n+\n+    this._arrowDown = document.querySelector(\".arrow-down\"); \n+    this._body = document.querySelector(\"body\"); \n+    this._ui = new UI(body, this.arrowDown)\n     constructor() {\n-        this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(body, this.arrowDown)\n+      \n     }\n \n \n \n"
+                },
+                {
+                    "date": 1689879043818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n class App {\n \n-    this._arrowDown = document.querySelector(\".arrow-down\"); \n-    this._body = document.querySelector(\"body\"); \n-    this._ui = new UI(body, this.arrowDown)\n+    _arrowDown = document.querySelector(\".arrow-down\"); \n+   _body = document.querySelector(\"body\"); \n+_ui = new UI(body, this.arrowDown)\n     constructor() {\n       \n     }\n \n \n \n     run() {\n-        this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui.\n+        _arrowDown.addEventListener(\"click\", () => {\n+            _arrowDown.add\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689879057157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n class App {\n \n     _arrowDown = document.querySelector(\".arrow-down\"); \n    _body = document.querySelector(\"body\"); \n-_ui = new UI(body, this.arrowDown)\n+   _ui = new UI(body, this.arrowDown)\n     constructor() {\n       \n     }\n \n \n \n     run() {\n         _arrowDown.addEventListener(\"click\", () => {\n-            _arrowDown.add\n+            this._arrowDown.\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689879064467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,8 @@\n \n     _arrowDown = document.querySelector(\".arrow-down\"); \n    _body = document.querySelector(\"body\"); \n    _ui = new UI(body, this.arrowDown)\n-    constructor() {\n-      \n-    }\n \n \n \n     run() {\n"
+                },
+                {
+                    "date": 1689879072010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n \n     _arrowDown = document.querySelector(\".arrow-down\"); \n-   _body = document.querySelector(\"body\"); \n-   _ui = new UI(body, this.arrowDown)\n+   _body = document.querySelector(\"body\");\n+_ui = new UI(body, this.arrowDown)\n \n \n \n     run() {\n"
+                },
+                {
+                    "date": 1689879079602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n-\n+    \n     _arrowDown = document.querySelector(\".arrow-down\"); \n    _body = document.querySelector(\"body\");\n-_ui = new UI(body, this.arrowDown)\n+   _ui = new UI(body, this.arrowDown)\n \n \n \n     run() {\n"
+                },
+                {
+                    "date": 1689879134559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n class App {\n-    \n-    _arrowDown = document.querySelector(\".arrow-down\"); \n-   _body = document.querySelector(\"body\");\n-   _ui = new UI(body, this.arrowDown)\n+    constructor() {\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._ui = new UI(body, this.arrowDown)\n+    }\n \n \n \n     run() {\n-        _arrowDown.addEventListener(\"click\", () => {\n-            this._arrowDown.\n+        this.arrowDown.addEventListener(\"click\", () => {\n+            this.ui.\n         })\n     }\n }\n \n@@ -17,9 +18,8 @@\n     constructor(body, arrowDown) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n-    \n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689879144880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,11 @@\n         this._body = document.querySelector(\"body\"); \n         this._ui = new UI(body, this.arrowDown)\n     }\n \n-\n-\n     run() {\n         this.arrowDown.addEventListener(\"click\", () => {\n-            this.ui.\n+            this._ui = \n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689879160708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         this._ui = new UI(body, this.arrowDown)\n     }\n \n     run() {\n-        this.arrowDown.addEventListener(\"click\", () => {\n+        this._arrowDown.addEventListener(\"click\", () => {\n             this._ui = \n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689879206080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n class App {\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(body, this.arrowDown)\n+        this._ui = new UI(this.body, this.arrowDown)\n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui = \n+            this._ui.\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689879250327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n class App {\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(this.body, this.arrowDown)\n+        this._ui = new UI(this._body, this.arrowDown)\n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui.\n+            this._ui.arrowDownModal(); \n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689879258465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n     constructor(body, arrowDown) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n+\n+   arrowDownModal(); \n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689879264651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n     }\n \n-   arrowDownModal(); \n+   arrowDownModal() {\n+    \n+   } \n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689879272460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n     }\n \n    arrowDownModal() {\n     \n-   } \n+   }\n+\n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689879291827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         this.arrowDown = arrowDown; \n     }\n \n    arrowDownModal() {\n-    \n+\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880270808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(this._body, this.arrowDown)\n+        this._ui = new UI(this._body, this._arrowDown)\n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n@@ -18,9 +18,9 @@\n         this.arrowDown = arrowDown; \n     }\n \n    arrowDownModal() {\n-\n+    this.arrowDown.c\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880305685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         this.arrowDown = arrowDown; \n     }\n \n    arrowDownModal() {\n-    this.arrowDown.c\n+    \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880342063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class App {\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n-        this._ui = new UI(this._body, this._arrowDown)\n+        this._ui = new UI(this._body, this._arrowDown, this._modal)\n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n@@ -18,9 +18,9 @@\n         this.arrowDown = arrowDown; \n     }\n \n    arrowDownModal() {\n-    \n+\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880352690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n class App {\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n+        this._modal = document.querySelector(\".modal\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal)\n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880371218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,12 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown) {\n+    constructor(body, arrowDown, modal) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n+        this.modal = \n     }\n \n    arrowDownModal() {\n \n"
+                },
+                {
+                    "date": 1689880378285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n class UI {\n     constructor(body, arrowDown, modal) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n-        this.modal = \n+        this.modal = modal; \n     }\n \n    arrowDownModal() {\n \n"
+                },
+                {
+                    "date": 1689880425291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.modal = modal; \n     }\n \n    arrowDownModal() {\n-\n+    this.modal  = \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880432250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,11 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n     }\n-\n-   arrowDownModal() {\n-    this.modal  = \n+    \n+    arrowDownModal() {\n+        this.modal  = \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880447186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.modal = modal; \n     }\n     \n     arrowDownModal() {\n-        this.modal  = \n+        this.modal.stylle.display = \"block\"\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880468271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.modal = modal; \n     }\n     \n     arrowDownModal() {\n-        this.modal.stylle.display = \"block\"\n+        this.modal.style.display = \"block\"; \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880526329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.modal = modal; \n     }\n     \n     arrowDownModal() {\n-        this.modal.style.display = \"block\"; \n+        this.modal.classList.toggle(\"display\") \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880618396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal)\n+        this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689880637649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n+        this._fonts = \n         this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880651717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._fonts = \n+        this._font = document.querySelector(\".font\")\n         this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880659566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".font\")\n+        this._font = document.querySelector(\".fonts p \")\n         this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880692742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".fonts p \")\n+        this._font = document.querySelector(\"right .fonts p \")\n         this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880720402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\"right .fonts p \")\n+        this._font = document.querySelector(\".right .fonts p\")\n         this._ui = new UI(this._body, this._arrowDown, this._modal); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689880738862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\")\n-        this._ui = new UI(this._body, this._arrowDown, this._modal); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689880743986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     constructor(body, arrowDown, modal) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n+        this._font = font; \n     }\n     \n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n"
+                },
+                {
+                    "date": 1689880832751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown, modal) {\n+    constructor(body, arrowDown, modal, font) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this._font = font; \n@@ -25,8 +25,12 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n+   switchFonts() {\n+    \n+   }\n+\n }\n \n const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689880870638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    switchFonts() {\n-    \n+    font.textContent = element; \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689880949914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,16 +2,17 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".right .fonts p\")\n+        this._font = document.querySelector(\".right .fonts p\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n+        \n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689880960868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n-        \n+        document.querySelector('li')\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689880976551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n-        document.querySelector('li')\n+        document.querySelectorAll('.modal ul li')\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689881004259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n-        document.querySelectorAll('.modal ul li')\n+        document.querySelectorAll('.modal ul li').forEach((element) => {\n+            \n+        })\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689881020969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n-            \n+            element.addEventListener(\"click\")\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689881029243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\")\n+            element.addEventListener(\"click\", )\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689881041525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\", )\n+            element.addEventListener(\"click\", this._ui.switchFonts)\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689881054881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n-   switchFonts() {\n+   switchFonts(element) {\n     font.textContent = element; \n    }\n \n }\n"
+                },
+                {
+                    "date": 1689881077634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\", this._ui.switchFonts)\n+            element.addEventListener(\"click\", () => {\n+                \n+            })\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689881090679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n             element.addEventListener(\"click\", () => {\n-                \n+                this._ui.switchFonts(element)\n             })\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689881119723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n             element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element)\n+                this._ui.switchFonts(element); \n             })\n         })\n     }\n }\n@@ -31,9 +31,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    switchFonts(element) {\n-    font.textContent = element; \n+    this.font.textContent = element; \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689881125082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     constructor(body, arrowDown, modal, font) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n-        this._font = font; \n+        this.font = font; \n     }\n     \n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n"
+                },
+                {
+                    "date": 1689881169826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n             element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element); \n+                this._ui.switchFonts(element.textContent); \n             })\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689881182793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n             this._ui.arrowDownModal(); \n         })\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n             element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element.textContent); \n+                this._ui.switchFonts(element); \n             })\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689881197720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    switchFonts(element) {\n-    this.font.textContent = element; \n+    this.font.textContent = element.textContent; \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689881226082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,10 @@\n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n             this._ui.arrowDownModal(); \n         })\n+\n+        // Switch Fonts -> Select List Items in Modal View\n         document.querySelectorAll('.modal ul li').forEach((element) => {\n             element.addEventListener(\"click\", () => {\n                 this._ui.switchFonts(element); \n             })\n"
+                },
+                {
+                    "date": 1689881273239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n+    this.body.style.font_famu\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689881348982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n-    this.body.style.font_famu\n+    this.body.style.fontFamily = element.textContent; \n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689883014999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n     this.body.style.fontFamily = element.textContent; \n+    if(element.textContent === \"Mono\")\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689883029909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,11 @@\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n     this.body.style.fontFamily = element.textContent; \n-    if(element.textContent === \"Mono\")\n+    if(element.textContent === \"Mono\") {\n+        this.body.style.fontFamily = \"MonoSpace\"\n+    }\n    }\n \n }\n \n"
+                },
+                {
+                    "date": 1689883043855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n     this.body.style.fontFamily = element.textContent; \n     if(element.textContent === \"Mono\") {\n-        this.body.style.fontFamily = \"MonoSpace\"\n+        this.body.style.fontFamily = \"MonoSpace\"; \n     }\n    }\n \n }\n"
+                },
+                {
+                    "date": 1689955065706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n     constructor() {\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".right .fonts p\"); \n+        this._font = document.querySelector(\".right .fonts p\");\n+        this._toggler = document.querySelector(\".toggler\") \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689955075326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n-        this._toggler = document.querySelector(\".toggler\") \n+        this._toggler = document.querySelector(\".togglers\") \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689955239177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n-        this._toggler = document.querySelector(\".togglers\") \n+        this._toggler = document.querySelector(\".togglers\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689955250102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._toggler = document.querySelector(\".togglers\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._toggler); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689955258670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown, modal, font) {\n+    constructor(body, arrowDown, modal, font, toggler) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n"
+                },
+                {
+                    "date": 1689955264735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n+        this._toggler = toggler; \n     }\n     \n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n"
+                },
+                {
+                    "date": 1689955285229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n+   switchDark() {\n+    \n+   }\n+\n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n     this.body.style.fontFamily = element.textContent; \n     if(element.textContent === \"Mono\") {\n"
+                },
+                {
+                    "date": 1689955298854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,16 +28,17 @@\n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n         this._toggler = toggler; \n+        this.isLight = false; \n     }\n     \n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n    switchDark() {\n-    \n+\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955338098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n             element.addEventListener(\"click\", () => {\n                 this._ui.switchFonts(element); \n             })\n         })\n+\n+        this._toggler.addEventListener('click')\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955343912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._toggler.addEventListener('click')\n+        this._toggler.addEventListener('click', switchDark)\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955353031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._toggler.addEventListener('click', switchDark)\n+        this._toggler.addEventListener('click', ui.switchDark)\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955362362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._toggler.addEventListener('click', ui.switchDark)\n+        this._toggler.addEventListener('click', ui.toggleDark)\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955369459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._toggler.addEventListener('click', ui.toggleDark)\n+        this._toggler.addEventListener('click', this._ui.toggleDark)\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955379210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n-   switchDark() {\n+   toggleDark() {\n \n    }\n \n    switchFonts(element) {\n"
+                },
+                {
+                    "date": 1689955385764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-\n+    alert(\"ITs darking time\")\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955464520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n-        this._toggler = document.querySelector(\".togglers\"); \n+        this._toggler = document.querySelector(\".slider\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._toggler); \n     }\n \n     run() {\n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    alert(\"ITs darking time\")\n+    alert(\"ITs darking time\"); \n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955479169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         this._arrowDown = document.querySelector(\".arrow-down\"); \n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n-        this._toggler = document.querySelector(\".slider\"); \n+        this._slider = document.querySelector(\".slider\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._toggler); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689955486544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._toggler); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._slider); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._toggler.addEventListener('click', this._ui.toggleDark)\n+        this._slider.addEventListener('click', this._ui.toggleDark)\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689955515432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    alert(\"ITs darking time\"); \n+    \n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955531224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    \n+    this._body.style.backgroundColor = \"black\"\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955547974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this._body.style.backgroundColor = \"black\"\n+    this._body.styles.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955571077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,18 +29,18 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n-        this._toggler = toggler; \n+        this.toggler = toggler; \n         this.isLight = false; \n     }\n     \n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this._body.styles.backgroundColor = \"black\";\n+    this.bo\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955583650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown, modal, font, toggler) {\n+    constructor(body, arrowDown, modal, font, slider) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n"
+                },
+                {
+                    "date": 1689955591830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n-        this.toggler = toggler; \n+        this.slider = slider; \n         this.isLight = false; \n     }\n     \n     arrowDownModal() {\n"
+                },
+                {
+                    "date": 1689955615065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this.bo\n+    this.body.style.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955645310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this.body.style.backgroundColor = \"black\";\n+    this.body.styles.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955655842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this.body.styles.backgroundColor = \"black\";\n+    this.body.style.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689955825894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._slider); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689955831688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,14 +24,13 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown, modal, font, slider) {\n+    constructor(body, arrowDown, modal, font) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n-        this.slider = slider; \n         this.isLight = false; \n     }\n     \n     arrowDownModal() {\n"
+                },
+                {
+                    "date": 1689955888136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this.body.style.backgroundColor = \"black\";\n+    body.style.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689956141637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 this._ui.switchFonts(element); \n             })\n         })\n \n-        this._slider.addEventListener('click', this._ui.toggleDark)\n+        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689956185973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    body.style.backgroundColor = \"black\";\n+    this.body.style.backgroundColor = \"black\";\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689957711470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         this.modal.classList.toggle(\"display\") \n    }\n \n    toggleDark() {\n-    this.body.style.backgroundColor = \"black\";\n+    this.bo\n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689957743320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n         this._body = document.querySelector(\"body\"); \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n+        this._moon = document.querySelector(\".moon\"); \n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689957767819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n+        this._text = document.querySelector(\"\")\n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689957775864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n-        this._text = document.querySelector(\"\")\n+        this._text = document.querySelector(\"input[type='text']\")\n         this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n     }\n \n     run() {\n"
+                },
+                {
+                    "date": 1689957797872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n-        this._text = document.querySelector(\"input[type='text']\")\n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font); \n+        this._text = document.querySelector(\"input[type='text']\"); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689957803583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n         this._text = document.querySelector(\"input[type='text']\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n     }\n \n     run() {\n         this._arrowDown.addEventListener(\"click\", () => {\n"
+                },
+                {
+                    "date": 1689957828029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     }\n }\n \n class UI {\n-    constructor(body, arrowDown, modal, font) {\n+    constructor(body, arrowDown, modal, font, moon, text) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font; \n"
+                },
+                {
+                    "date": 1689957836487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n     constructor(body, arrowDown, modal, font, moon, text) {\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n-        this.font = font; \n+        this.font = font;\n+        this.moon = moon;  \n         this.isLight = false; \n     }\n     \n     arrowDownModal() {\n"
+                },
+                {
+                    "date": 1689957852999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,14 +31,15 @@\n         this.body = body; \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font;\n-        this.moon = moon;  \n+        this.moon = moon; \n+        this.text = text;  \n         this.isLight = false; \n     }\n     \n     arrowDownModal() {\n-        this.modal.classList.toggle(\"display\") \n+        this.modal.classList.toggle(\"display\"); \n    }\n \n    toggleDark() {\n     this.bo\n"
+                },
+                {
+                    "date": 1689957954781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         this.modal.classList.toggle(\"display\"); \n    }\n \n    toggleDark() {\n-    this.bo\n+    this.body.classList.toggle('dark'); \n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689957973071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,10 @@\n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n+    this.moon.classList.toggle('dark');\n+    this.text.classList.toggle('dark'); \n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689957999617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n    toggleDark() {\n     this.body.classList.toggle('dark'); \n     this.moon.classList.toggle('dark');\n     this.text.classList.toggle('dark'); \n+    this.modal.classList.toggle('dark'); \n    }\n \n    switchFonts(element) {\n     this.font.textContent = element.textContent; \n"
+                },
+                {
+                    "date": 1689961569637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,12 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\"); \n    }\n \n+   showError() {\n+    \n+   }\n+\n    toggleDark() {\n     this.body.classList.toggle('dark'); \n     this.moon.classList.toggle('dark');\n     this.text.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961676073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         this.modal.classList.toggle(\"display\"); \n    }\n \n    showError() {\n-    \n+    this.text.classList.add('error')\n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961686918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\"); \n    }\n \n-   showError() {\n-    this.text.classList.add('error')\n+   showTextError() {\n+    this.text.classList.add('error'); \n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961697580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     arrowDownModal() {\n         this.modal.classList.toggle(\"display\"); \n    }\n \n-   showTextError() {\n+   showTextErrorMessage() {\n     this.text.classList.add('error'); \n    }\n \n    toggleDark() {\n"
+                },
+                {
+                    "date": 1689961705792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,12 @@\n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n    }\n \n+   hideTextErrorMessage() {\n+    \n+   }\n+\n    toggleDark() {\n     this.body.classList.toggle('dark'); \n     this.moon.classList.toggle('dark');\n     this.text.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961790382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,13 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n+    this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n-    \n+\n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961816852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n+    document.querySelector('empty')\n     this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689961822695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n-    document.querySelector('empty')\n+    document.querySelector('.empty')\n     this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689961844374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n-    document.querySelector('.empty')\n+    document.querySelector('.empty').classList.add('toggle')\n     this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689961855495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n-    document.querySelector('.empty').classList.add('toggle')\n+    document.querySelector('.empty').classList.add('display'); \n     this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689961861842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,8 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n-    document.querySelector('.empty').classList.add('display'); \n     this.text.classList.add('')\n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689961876846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,13 +42,14 @@\n    }\n \n    showTextErrorMessage() {\n     this.text.classList.add('error'); \n-    this.text.classList.add('')\n+    document.querySelector('.empty').classList.add('display'); \n    }\n \n    hideTextErrorMessage() {\n-\n+    this.text.classList.add('error'); \n+    document.querySelector('.empty').classList.add('display'); \n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689961884809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     document.querySelector('.empty').classList.add('display'); \n    }\n \n    hideTextErrorMessage() {\n-    this.text.classList.add('error'); \n+    this.text.classList.remove('error'); \n     document.querySelector('.empty').classList.add('display'); \n    }\n \n    toggleDark() {\n"
+                },
+                {
+                    "date": 1689961895495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n    }\n \n    hideTextErrorMessage() {\n     this.text.classList.remove('error'); \n-    document.querySelector('.empty').classList.add('display'); \n+    document.querySelector('.empty').classList.remove('display'); \n    }\n \n    toggleDark() {\n     this.body.classList.toggle('dark'); \n"
+                },
+                {
+                    "date": 1689962031879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,73 @@\n+class App {\n+    constructor() {\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._modal = document.querySelector(\".modal\"); \n+        this._font = document.querySelector(\".right .fonts p\");\n+        this._slider = document.querySelector(\".slider\"); \n+        this._moon = document.querySelector(\".moon\"); \n+        this._text = document.querySelector(\"input[type='text']\"); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n+    }\n+\n+    run() {\n+        this._arrowDown.addEventListener(\"click\", () => {\n+            this._ui.arrowDownModal(); \n+        })\n+\n+        // Switch Fonts -> Select List Items in Modal View\n+        document.querySelectorAll('.modal ul li').forEach((element) => {\n+            element.addEventListener(\"click\", () => {\n+                this._ui.switchFonts(element); \n+            })\n+        })\n+\n+        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n+\n+        this._text.addE\n+    }\n+}\n+\n+class UI {\n+    constructor(body, arrowDown, modal, font, moon, text) {\n+        this.body = body; \n+        this.arrowDown = arrowDown; \n+        this.modal = modal; \n+        this.font = font;\n+        this.moon = moon; \n+        this.text = text;  \n+    }\n+    \n+    arrowDownModal() {\n+        this.modal.classList.toggle(\"display\"); \n+   }\n+\n+   showTextErrorMessage() {\n+    this.text.classList.add('error'); \n+    document.querySelector('.empty').classList.add('display'); \n+   }\n+\n+   hideTextErrorMessage() {\n+    this.text.classList.remove('error'); \n+    document.querySelector('.empty').classList.remove('display'); \n+   }\n+\n+   toggleDark() {\n+    this.body.classList.toggle('dark'); \n+    this.moon.classList.toggle('dark');\n+    this.text.classList.toggle('dark'); \n+    this.modal.classList.toggle('dark'); \n+   }\n+\n+   switchFonts(element) {\n+    this.font.textContent = element.textContent; \n+    this.body.style.fontFamily = element.textContent; \n+    if(element.textContent === \"Mono\") {\n+        this.body.style.fontFamily = \"MonoSpace\"; \n+    }\n+   }\n+\n+}\n+\n+const app = new App(); \n+app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689962184996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,11 @@\n     }\n }\n \n class UI {\n+   let x =\n     constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body = body; \n+        this.body =  document.querySelector(\"body\"); \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font;\n         this.moon = moon; \n@@ -69,77 +70,5 @@\n \n }\n \n const app = new App(); \n-app.run(); \n-class App {\n-    constructor() {\n-        this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n-        this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".right .fonts p\");\n-        this._slider = document.querySelector(\".slider\"); \n-        this._moon = document.querySelector(\".moon\"); \n-        this._text = document.querySelector(\"input[type='text']\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n-    }\n-\n-    run() {\n-        this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui.arrowDownModal(); \n-        })\n-\n-        // Switch Fonts -> Select List Items in Modal View\n-        document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element); \n-            })\n-        })\n-\n-        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n-    }\n-}\n-\n-class UI {\n-    constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body = body; \n-        this.arrowDown = arrowDown; \n-        this.modal = modal; \n-        this.font = font;\n-        this.moon = moon; \n-        this.text = text;  \n-        this.isLight = false; \n-    }\n-    \n-    arrowDownModal() {\n-        this.modal.classList.toggle(\"display\"); \n-   }\n-\n-   showTextErrorMessage() {\n-    this.text.classList.add('error'); \n-    document.querySelector('.empty').classList.add('display'); \n-   }\n-\n-   hideTextErrorMessage() {\n-    this.text.classList.remove('error'); \n-    document.querySelector('.empty').classList.remove('display'); \n-   }\n-\n-   toggleDark() {\n-    this.body.classList.toggle('dark'); \n-    this.moon.classList.toggle('dark');\n-    this.text.classList.toggle('dark'); \n-    this.modal.classList.toggle('dark'); \n-   }\n-\n-   switchFonts(element) {\n-    this.font.textContent = element.textContent; \n-    this.body.style.fontFamily = element.textContent; \n-    if(element.textContent === \"Mono\") {\n-        this.body.style.fontFamily = \"MonoSpace\"; \n-    }\n-   }\n-\n-}\n-\n-const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689962190840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,10 @@\n     }\n }\n \n class UI {\n-   let x =\n     constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body =  document.querySelector(\"body\"); \n+        this.body = document.querySelector(\"body\"); \n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font;\n         this.moon = moon; \n"
+                },
+                {
+                    "date": 1689962237251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\n \n class UI {\n     constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body = document.querySelector(\"body\"); \n+        this.body = body\n         this.arrowDown = arrowDown; \n         this.modal = modal; \n         this.font = font;\n         this.moon = moon; \n"
+                },
+                {
+                    "date": 1689962372712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addE\n+        this._text.addEven\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689962449381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEven\n+        this._text.addEventListener('keypress')\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689962489993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,11 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress')\n+        this._text.addEventListener('keypress', function(event) {\n+            \n+        })\n     }\n }\n \n class UI {\n"
+                },
+                {
+                    "date": 1689962506043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n-            \n+            if(event.key === \"Enter\") {\n+                \n+            }\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689962575526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n-                \n+                this._text.\n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689962622010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n-                this._text.\n+                if(this._text.value.length)\n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689962629266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n-                if(this._text.value.length)\n+                if(this._text.value.length === 0)\n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689962727191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n-                if(this._text.value.length === 0)\n+                if(this._text.value.length === 0) {\n+                    this._ui.showTextErrorMessage(); \n+                }\n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689962851915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n-                if(this._text.value.length === 0) {\n+                if(this.value.length === 0) {\n                     this._ui.showTextErrorMessage(); \n                 }\n             }\n         })\n"
+                },
+                {
+                    "date": 1689962881328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         this.modal.classList.toggle(\"display\"); \n    }\n \n    showTextErrorMessage() {\n-    this.text.classList.add('error'); \n+    this.text.classList.add('error').bind(this); \n     document.querySelector('.empty').classList.add('display'); \n    }\n \n    hideTextErrorMessage() {\n"
+                },
+                {
+                    "date": 1689962890933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,79 @@\n+class App {\n+    constructor() {\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._modal = document.querySelector(\".modal\"); \n+        this._font = document.querySelector(\".right .fonts p\");\n+        this._slider = document.querySelector(\".slider\"); \n+        this._moon = document.querySelector(\".moon\"); \n+        this._text = document.querySelector(\"input[type='text']\"); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n+    }\n+\n+    run() {\n+        this._arrowDown.addEventListener(\"click\", () => {\n+            this._ui.arrowDownModal(); \n+        })\n+\n+        // Switch Fonts -> Select List Items in Modal View\n+        document.querySelectorAll('.modal ul li').forEach((element) => {\n+            element.addEventListener(\"click\", () => {\n+                this._ui.switchFonts(element); \n+            })\n+        })\n+\n+        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n+\n+        this._text.addEventListener('keypress', function(event) {\n+            if(event.key === \"Enter\") {\n+                if(this.value.length === 0) {\n+                    this._ui.showTextErrorMessage(); \n+                }\n+            }\n+        })\n+    }\n+}\n+\n+class UI {\n+    constructor(body, arrowDown, modal, font, moon, text) {\n+        this.body = body\n+        this.arrowDown = arrowDown; \n+        this.modal = modal; \n+        this.font = font;\n+        this.moon = moon; \n+        this.text = text;  \n+    }\n+    \n+    arrowDownModal() {\n+        this.modal.classList.toggle(\"display\"); \n+   }\n+\n+   showTextErrorMessage() {\n+    this.text.classList.add('error').bind(this); \n+    document.querySelector('.empty').classList.add('display'); \n+   }\n+\n+   hideTextErrorMessage() {\n+    this.text.classList.remove('error').bind(this); \n+    document.querySelector('.empty').classList.remove('display'); \n+   }\n+\n+   toggleDark() {\n+    this.body.classList.toggle('dark'); \n+    this.moon.classList.toggle('dark');\n+    this.text.classList.toggle('dark'); \n+    this.modal.classList.toggle('dark'); \n+   }\n+\n+   switchFonts(element) {\n+    this.font.textContent = element.textContent; \n+    this.body.style.fontFamily = element.textContent; \n+    if(element.textContent === \"Mono\") {\n+        this.body.style.fontFamily = \"MonoSpace\"; \n+    }\n+   }\n+\n+}\n+\n+const app = new App(); \n+app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689962940681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,84 +75,5 @@\n \n }\n \n const app = new App(); \n-app.run(); \n-class App {\n-    constructor() {\n-        this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n-        this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".right .fonts p\");\n-        this._slider = document.querySelector(\".slider\"); \n-        this._moon = document.querySelector(\".moon\"); \n-        this._text = document.querySelector(\"input[type='text']\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n-    }\n-\n-    run() {\n-        this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui.arrowDownModal(); \n-        })\n-\n-        // Switch Fonts -> Select List Items in Modal View\n-        document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element); \n-            })\n-        })\n-\n-        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n-\n-        this._text.addEventListener('keypress', function(event) {\n-            if(event.key === \"Enter\") {\n-                if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage(); \n-                }\n-            }\n-        })\n-    }\n-}\n-\n-class UI {\n-    constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body = body\n-        this.arrowDown = arrowDown; \n-        this.modal = modal; \n-        this.font = font;\n-        this.moon = moon; \n-        this.text = text;  \n-    }\n-    \n-    arrowDownModal() {\n-        this.modal.classList.toggle(\"display\"); \n-   }\n-\n-   showTextErrorMessage() {\n-    this.text.classList.add('error').bind(this); \n-    document.querySelector('.empty').classList.add('display'); \n-   }\n-\n-   hideTextErrorMessage() {\n-    this.text.classList.remove('error'); \n-    document.querySelector('.empty').classList.remove('display'); \n-   }\n-\n-   toggleDark() {\n-    this.body.classList.toggle('dark'); \n-    this.moon.classList.toggle('dark');\n-    this.text.classList.toggle('dark'); \n-    this.modal.classList.toggle('dark'); \n-   }\n-\n-   switchFonts(element) {\n-    this.font.textContent = element.textContent; \n-    this.body.style.fontFamily = element.textContent; \n-    if(element.textContent === \"Mono\") {\n-        this.body.style.fontFamily = \"MonoSpace\"; \n-    }\n-   }\n-\n-}\n-\n-const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689962952029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage(); \n+                    this._ui.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689962959929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._ui); \n+                    this._ui.showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n@@ -48,14 +48,14 @@\n         this.modal.classList.toggle(\"display\"); \n    }\n \n    showTextErrorMessage() {\n-    this.text.classList.add('error').bind(this); \n+    this.text.classList.add('error'); \n     document.querySelector('.empty').classList.add('display'); \n    }\n \n    hideTextErrorMessage() {\n-    this.text.classList.remove('error').bind(this); \n+    this.text.classList.remove('error'); \n     document.querySelector('.empty').classList.remove('display'); \n    }\n \n    toggleDark() {\n"
+                },
+                {
+                    "date": 1689962966895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage(); \n+                    this._ui.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963019357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._ui); \n+                    this._ui.bind(this._ui).showTextErrorMessage()\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963026381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.bind(this._ui).showTextErrorMessage()\n+                    this..bind(this._ui).showTextErrorMessage()\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963032497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this..bind(this._ui).showTextErrorMessage()\n+                    this._ui.showTextErrorMessage().bind(this._u); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963038888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._u); \n+                    this.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963054609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this.showTextErrorMessage().bind(this._ui); \n+                    this._ui.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963093955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._ui); \n+                    this.bind(_this._ui)\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963099109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this.bind(_this._ui)\n+                    this.bind(this._ui)\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963107169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this.bind(this._ui)\n+                    this.bind(this._ui).showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963143475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this.bind(this._ui).showTextErrorMessage(); \n+                    this.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963148752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this.showTextErrorMessage().bind(this._ui); \n+                    this._ui.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963223966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._ui); \n+                    this._ui.showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963260745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage(); \n+                    this._ui.showTextErrorMessage().bind(this._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963272884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(this._ui); \n+                    this._ui.showTextErrorMessage().bind(App); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963292316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(App); \n+                    this._ui.showTextErrorMessage().bind(App._ui); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963307077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(App._ui); \n+                    this._ui.showTextErrorMessage().bind(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963465287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage().bind(); \n+                    this._ui.showTextErrorMessage()\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963641049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,80 @@\n+class App {\n+    constructor() {\n+        this._arrowDown = document.querySelector(\".arrow-down\"); \n+        this._body = document.querySelector(\"body\"); \n+        this._modal = document.querySelector(\".modal\"); \n+        this._font = document.querySelector(\".right .fonts p\");\n+        this._slider = document.querySelector(\".slider\"); \n+        this._moon = document.querySelector(\".moon\"); \n+        this._text = document.querySelector(\"input[type='text']\"); \n+        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n+    }\n+\n+    run() {\n+        this._arrowDown.addEventListener(\"click\", () => {\n+            this._ui.arrowDownModal(); \n+        })\n+\n+        // Switch Fonts -> Select List Items in Modal View\n+        document.querySelectorAll('.modal ul li').forEach((element) => {\n+            element.addEventListener(\"click\", () => {\n+                this._ui.switchFonts(element); \n+            })\n+        })\n+\n+        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n+\n+        this._text.addEventListener('keypress', function(event) {\n+            this._ui.\n+            if(event.key === \"Enter\") {\n+                if(this.value.length === 0) {\n+                    App.apply(this._ui, )\n+                }\n+            }\n+        })\n+    }\n+}\n+\n+class UI {\n+    constructor(body, arrowDown, modal, font, moon, text) {\n+        this.body = body\n+        this.arrowDown = arrowDown; \n+        this.modal = modal; \n+        this.font = font;\n+        this.moon = moon; \n+        this.text = text;  \n+    }\n+    \n+    arrowDownModal() {\n+        this.modal.classList.toggle(\"display\"); \n+   }\n+\n+   showTextErrorMessage() {\n+    this.text.classList.add('error'); \n+    document.querySelector('.empty').classList.add('display'); \n+   }\n+\n+   hideTextErrorMessage() {\n+    this.text.classList.remove('error'); \n+    document.querySelector('.empty').classList.remove('display'); \n+   }\n+\n+   toggleDark() {\n+    this.body.classList.toggle('dark'); \n+    this.moon.classList.toggle('dark');\n+    this.text.classList.toggle('dark'); \n+    this.modal.classList.toggle('dark'); \n+   }\n+\n+   switchFonts(element) {\n+    this.font.textContent = element.textContent; \n+    this.body.style.fontFamily = element.textContent; \n+    if(element.textContent === \"Mono\") {\n+        this.body.style.fontFamily = \"MonoSpace\"; \n+    }\n+   }\n+\n+}\n+\n+const app = new App(); \n+app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689963680723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,11 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', function(event) {\n-            this._ui.\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    App.apply(this._ui, )\n+                    this._ui.showTextErrorMessage();\n                 }\n             }\n         })\n     }\n@@ -76,84 +75,5 @@\n \n }\n \n const app = new App(); \n-app.run(); \n-class App {\n-    constructor() {\n-        this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n-        this._modal = document.querySelector(\".modal\"); \n-        this._font = document.querySelector(\".right .fonts p\");\n-        this._slider = document.querySelector(\".slider\"); \n-        this._moon = document.querySelector(\".moon\"); \n-        this._text = document.querySelector(\"input[type='text']\"); \n-        this._ui = new UI(this._body, this._arrowDown, this._modal, this._font, this._moon, this._text); \n-    }\n-\n-    run() {\n-        this._arrowDown.addEventListener(\"click\", () => {\n-            this._ui.arrowDownModal(); \n-        })\n-\n-        // Switch Fonts -> Select List Items in Modal View\n-        document.querySelectorAll('.modal ul li').forEach((element) => {\n-            element.addEventListener(\"click\", () => {\n-                this._ui.switchFonts(element); \n-            })\n-        })\n-\n-        this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n-\n-        this._text.addEventListener('keypress', function(event) {\n-            if(event.key === \"Enter\") {\n-                if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage()\n-                }\n-            }\n-        })\n-    }\n-}\n-\n-class UI {\n-    constructor(body, arrowDown, modal, font, moon, text) {\n-        this.body = body\n-        this.arrowDown = arrowDown; \n-        this.modal = modal; \n-        this.font = font;\n-        this.moon = moon; \n-        this.text = text;  \n-    }\n-    \n-    arrowDownModal() {\n-        this.modal.classList.toggle(\"display\"); \n-   }\n-\n-   showTextErrorMessage() {\n-    this.text.classList.add('error'); \n-    document.querySelector('.empty').classList.add('display'); \n-   }\n-\n-   hideTextErrorMessage() {\n-    this.text.classList.remove('error'); \n-    document.querySelector('.empty').classList.remove('display'); \n-   }\n-\n-   toggleDark() {\n-    this.body.classList.toggle('dark'); \n-    this.moon.classList.toggle('dark');\n-    this.text.classList.toggle('dark'); \n-    this.modal.classList.toggle('dark'); \n-   }\n-\n-   switchFonts(element) {\n-    this.font.textContent = element.textContent; \n-    this.body.style.fontFamily = element.textContent; \n-    if(element.textContent === \"Mono\") {\n-        this.body.style.fontFamily = \"MonoSpace\"; \n-    }\n-   }\n-\n-}\n-\n-const app = new App(); \n app.run(); \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689963834551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage();\n+                    this._ui.showTextErrorMessage(UI)\n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963914675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    this._ui.showTextErrorMessage(UI)\n+                    showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689963956964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    showTextErrorMessage(); \n+                    _ui.showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964008847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \n         this._text.addEventListener('keypress', function(event) {\n             if(event.key === \"Enter\") {\n                 if(this.value.length === 0) {\n-                    _ui.showTextErrorMessage(); \n+                    showTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964040339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n class App {\n     constructor() {\n+        this._body = document.querySelector(\"body\"); \n         this._arrowDown = document.querySelector(\".arrow-down\"); \n-        this._body = document.querySelector(\"body\"); \n+        \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n"
+                },
+                {
+                    "date": 1689964100376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n class App {\n     constructor() {\n         this._body = document.querySelector(\"body\"); \n         this._arrowDown = document.querySelector(\".arrow-down\"); \n-        \n         this._modal = document.querySelector(\".modal\"); \n         this._font = document.querySelector(\".right .fonts p\");\n         this._slider = document.querySelector(\".slider\"); \n         this._moon = document.querySelector(\".moon\"); \n@@ -24,14 +23,10 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', function(event) {\n-            if(event.key === \"Enter\") {\n-                if(this.value.length === 0) {\n-                    showTextErrorMessage(); \n-                }\n-            }\n+        this._text.addEventListener('keypress', () => {\n+            \n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964109338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', () => {\n-            \n+        this._text.addEventListener('keypress', (e) => {\n+\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964158770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n-\n+            if(e === \"Enter\")\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964170994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n-            if(e === \"Enter\")\n+            if(e.key === \"Enter\")\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964243843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', (e) => {\n-            if(e.key === \"Enter\")\n+        this._text.addEventListener('keypress', () => {\n+\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964262128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', () => {\n-\n+            this._ui.showTextErrorMessage(); \n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964349687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', () => {\n+        this._text.addEventListener('keypress', (e) => {\n             this._ui.showTextErrorMessage(); \n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689964468813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', (e) => {\n+        this._text.addEventListener('keypress', () => {\n             this._ui.showTextErrorMessage(); \n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689964513280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', () => {\n-            this._ui.showTextErrorMessage(); \n+        this._text.addEventListener('keypress', (e) => {\n+            if(this._text.valu)\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964522541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n-            if(this._text.valu)\n+            if(e.key === \"Enter\") {\n+                \n+            }\n         })\n     }\n }\n \n"
+                },
+                {
+                    "date": 1689964535851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n-                \n+                this._ui.showTextErrorMessage(); \n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689964627162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n+                if(this._text.value === \"\")\n                 this._ui.showTextErrorMessage(); \n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964634531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n         this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n-                if(this._text.value === \"\")\n+                if(this._text.value === \"\") {\n+                    \n+                }\n                 this._ui.showTextErrorMessage(); \n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964645268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n \n         this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n-                    \n+                    this._ui.showTextErrorMessage(); \n                 }\n-                this._ui.showTextErrorMessage(); \n             }\n         })\n     }\n }\n"
+                },
+                {
+                    "date": 1689964887695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,10 @@\n         this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n+                } else {\n+                    \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964902100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n                 } else {\n-                    \n+                    this._ui.hideTextErrorMessage(); \n                 }\n             }\n         })\n     }\n"
+                },
+                {
+                    "date": 1689964914021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', (e) => {\n+        this._text.addEventListener('keypress', function(e){\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n                 } else {\n"
+                },
+                {
+                    "date": 1689964925651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', function(e){\n+        this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n                 } else {\n"
+                },
+                {
+                    "date": 1689965082566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', (e) => {\n+        this._text.addEventListener('keypress', function(e) => {\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n                 } else {\n"
+                },
+                {
+                    "date": 1689965104100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         })\n \n         this._slider.addEventListener('click', this._ui.toggleDark.bind(this._ui))\n \n-        this._text.addEventListener('keypress', function(e) => {\n+        this._text.addEventListener('keypress', (e) => {\n             if(e.key === \"Enter\") {\n                 if(this._text.value === \"\") {\n                     this._ui.showTextErrorMessage(); \n                 } else {\n"
+                }
+            ],
+            "date": 1689876012195,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
