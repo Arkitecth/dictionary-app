@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 163,
+            "activePatchIndex": 232,
             "patches": [
                 {
                     "date": 1689878330011,
@@ -660,6 +660,282 @@
                 {
                     "date": 1689966123144,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -308,8 +308,11 @@\n     margin: 10% auto;\n     display: none;\n    \n }\n+.flex-display {\n+    display: flex;\n+}\n \n .not-found h1 {\n     font-size: 64px;\n }\n"
+                },
+                {
+                    "date": 1690040995226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -256,9 +256,13 @@\n     color: var(--purple);\n     padding: 0 20px;\n }\n \n+hr {\n+    \n+}\n \n+\n /* Dynamic Styles */\n \n .modal {\n     background-color: var(--pure-white);\n"
+                },
+                {
+                    "date": 1690041006574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -257,9 +257,9 @@\n     padding: 0 20px;\n }\n \n hr {\n-    \n+    width: 70%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041014097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -258,8 +258,9 @@\n }\n \n hr {\n     width: 70%;\n+    text-align: center;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041023405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -257,9 +257,8 @@\n     padding: 0 20px;\n }\n \n hr {\n-    width: 70%;\n     text-align: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1690041037680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -258,8 +258,9 @@\n }\n \n hr {\n     text-align: center;\n+    width: 90%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041053337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -258,9 +258,9 @@\n }\n \n hr {\n     text-align: center;\n-    width: 90%;\n+    width: 10%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041062778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -258,8 +258,9 @@\n }\n \n hr {\n     text-align: center;\n+    margin: 0 auto;\n     width: 10%;\n }\n \n \n"
+                },
+                {
+                    "date": 1690041069885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,9 +259,9 @@\n \n hr {\n     text-align: center;\n     margin: 0 auto;\n-    width: 10%;\n+    width: 50%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041075599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,9 +259,9 @@\n \n hr {\n     text-align: center;\n     margin: 0 auto;\n-    width: 50%;\n+    width: 60%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041081469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,9 +259,9 @@\n \n hr {\n     text-align: center;\n     margin: 0 auto;\n-    width: 60%;\n+    width: 65%;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041102584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,8 +260,9 @@\n hr {\n     text-align: center;\n     margin: 0 auto;\n     width: 65%;\n+    color: var(--dark-grey);\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041180655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,9 +260,9 @@\n hr {\n     text-align: center;\n     margin: 0 auto;\n     width: 65%;\n-    color: var(--dark-grey);\n+    border: 1px solid var(--lighter-grey);\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041208953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,11 @@\n     width: 65%;\n     border: 1px solid var(--lighter-grey);\n }\n \n+.description \n \n+\n /* Dynamic Styles */\n \n .modal {\n     background-color: var(--pure-white);\n"
+                },
+                {
+                    "date": 1690041255923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,11 @@\n     width: 65%;\n     border: 1px solid var(--lighter-grey);\n }\n \n-.description \n+.description p {\n+    \n+}\n \n \n /* Dynamic Styles */\n \n"
+                },
+                {
+                    "date": 1690041285677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,10 +263,10 @@\n     width: 65%;\n     border: 1px solid var(--lighter-grey);\n }\n \n-.description p {\n-    \n+.description ul p {\n+\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041293602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -264,9 +264,9 @@\n     border: 1px solid var(--lighter-grey);\n }\n \n .description ul p {\n-\n+    font-size: 10px;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041309274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -264,9 +264,9 @@\n     border: 1px solid var(--lighter-grey);\n }\n \n .description ul p {\n-    font-size: 10px;\n+    font-size: 18px;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690041581258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -267,9 +267,13 @@\n .description ul p {\n     font-size: 18px;\n }\n \n+.source {\n+    text-align: center;\n+}\n \n+\n /* Dynamic Styles */\n \n .modal {\n     background-color: var(--pure-white);\n"
+                },
+                {
+                    "date": 1690041593823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -268,8 +268,9 @@\n     font-size: 18px;\n }\n \n .source {\n+    padding: 20px;\n     text-align: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1690041717965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,13 @@\n     background-color: var(--pure-white);\n     color: var(--dark-three);\n }\n \n+main {\n+    max-width: 900px;\n+}\n \n+\n /* Light Styling */\n \n /* Nav Styling */\n nav {\n"
+                },
+                {
+                    "date": 1690041737268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n }\n \n main {\n     max-width: 900px;\n+    text-align: center;\n }\n \n \n /* Light Styling */\n"
+                },
+                {
+                    "date": 1690041742751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     color: var(--dark-three);\n }\n \n main {\n-    max-width: 900px;\n+    max-width: 1100px;\n     text-align: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1690042115598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,8 @@\n     color: var(--dark-three);\n }\n \n main {\n-    max-width: 1100px;\n-    text-align: center;\n }\n \n \n /* Light Styling */\n"
+                },
+                {
+                    "date": 1690042307677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,12 +29,9 @@\n     background-color: var(--pure-white);\n     color: var(--dark-three);\n }\n \n-main {\n-}\n \n-\n /* Light Styling */\n \n /* Nav Styling */\n nav {\n"
+                },
+                {
+                    "date": 1690042338290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,8 +270,9 @@\n \n .source {\n     padding: 20px;\n     text-align: center;\n+    text-underline-position: below;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042367876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     padding: 20px;\n     text-align: center;\n-    text-underline-position: below;\n+    text-decoration: underline;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042394233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,8 +271,9 @@\n .source {\n     padding: 20px;\n     text-align: center;\n     text-decoration: underline;\n+    padding: 30px;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042682296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -268,12 +268,9 @@\n     font-size: 18px;\n }\n \n .source {\n-    padding: 20px;\n-    text-align: center;\n-    text-decoration: underline;\n-    padding: 30px;\n+    display: flex;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042694515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,8 +269,9 @@\n }\n \n .source {\n     display: flex;\n+    justify-content: space-around;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042702745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,9 +269,9 @@\n }\n \n .source {\n     display: flex;\n-    justify-content: space-around;\n+    justify-content: space-between;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042711259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,9 +269,8 @@\n }\n \n .source {\n     display: flex;\n-    justify-content: space-between;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042719655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,13 @@\n .source {\n     display: flex;\n }\n \n+.source p {\n+    padding: 20px;\n+}\n \n+\n /* Dynamic Styles */\n \n .modal {\n     background-color: var(--pure-white);\n"
+                },
+                {
+                    "date": 1690042733689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -272,9 +272,9 @@\n     display: flex;\n }\n \n .source p {\n-    padding: 20px;\n+    padding: 0 20px;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042745564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,8 +273,9 @@\n }\n \n .source p {\n     padding: 0 20px;\n+    text-decoration: underline;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690042760960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,8 +269,9 @@\n }\n \n .source {\n     display: flex;\n+    margin: 0 auto;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042768333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,9 +269,9 @@\n }\n \n .source {\n     display: flex;\n-    margin: 0 auto;\n+    text-align: center;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042788919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,9 +269,9 @@\n }\n \n .source {\n     display: flex;\n-    text-align: center;\n+    padding: 20px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042815766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,9 +269,10 @@\n }\n \n .source {\n     display: flex;\n-    padding: 20px;\n+    padding: 20px 0;\n+    margin-left: 20px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042822939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,8 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    margin-left: 20px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042898892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,8 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n+    font-size: 1.20rem;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042906286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 1.20rem;\n+    font-size: 14px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042915883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 14px;\n+    font-size: 0.20rem;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042922100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 0.20rem;\n+    font-size: 0.25;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042933922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 0.25;\n+    font-size: 1.14rem;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042943512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 1.14rem;\n+    font-size: 14px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042976028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,8 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n+    \n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690042999190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n-    \n+    align-content: center;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043009626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n-    align-content: center;\n+    justify-content: center;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043026391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n-    justify-content: center;\n+    justify-content: space-evenly;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043035234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n-    justify-content: space-evenly;\n+    justify-content: space-around;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043055775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,10 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 14px;\n-    justify-content: space-around;\n+    font-size: 14px\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043065101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \n .source {\n     display: flex;\n     padding: 20px 0;\n-    font-size: 14px\n+    font-size: 14px;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043075351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,8 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n+    margin-left: 10%;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690043132536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,9 +271,9 @@\n .source {\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n-    margin-left: 10%;\n+    margin-left: 15%;\n }\n \n .source p {\n     padding: 0 20px;\n@@ -447,9 +447,13 @@\n     .empty {\n         left: 0;\n     }\n \n+    .source {\n+        justify-content: flex-start;\n+    }\n \n+\n }\n \n \n \n"
+                },
+                {
+                    "date": 1690043144404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -407,8 +407,12 @@\n \n     .empty {\n         left: 0;\n     }\n+    .source {\n+        justify-content: flex-start;\n+    }\n+\n }\n \n @media screen and (min-width:580px) and (max-width:768px) {\n     nav {\n@@ -447,13 +451,10 @@\n     .empty {\n         left: 0;\n     }\n \n-    .source {\n-        justify-content: flex-start;\n-    }\n+    \n \n-\n }\n \n \n \n"
+                },
+                {
+                    "date": 1690043153441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -408,9 +408,9 @@\n     .empty {\n         left: 0;\n     }\n     .source {\n-        justify-content: flex-start;\n+        justify-content: center;\n     }\n \n }\n \n"
+                },
+                {
+                    "date": 1690043179293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -408,9 +408,9 @@\n     .empty {\n         left: 0;\n     }\n     .source {\n-        justify-content: center;\n+        margin-left: 0;\n     }\n \n }\n \n"
+                },
+                {
+                    "date": 1690043234010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -450,8 +450,11 @@\n     }\n     .empty {\n         left: 0;\n     }\n+    hr {\n+        \n+    }\n \n     \n \n }\n"
+                },
+                {
+                    "date": 1690043241895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -451,9 +451,9 @@\n     .empty {\n         left: 0;\n     }\n     hr {\n-        \n+        width: 100%;\n     }\n \n     \n \n"
+                },
+                {
+                    "date": 1690043262870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -451,9 +451,9 @@\n     .empty {\n         left: 0;\n     }\n     hr {\n-        width: 100%;\n+        width: 90%;\n     }\n \n     \n \n"
+                },
+                {
+                    "date": 1690043305719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -279,9 +279,13 @@\n     padding: 0 20px;\n     text-decoration: underline;\n }\n \n+.source a {\n+    \n+}\n \n+\n /* Dynamic Styles */\n \n .modal {\n     background-color: var(--pure-white);\n"
+                },
+                {
+                    "date": 1690043314962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -279,10 +279,10 @@\n     padding: 0 20px;\n     text-decoration: underline;\n }\n \n-.source a {\n-    \n+.source span a {\n+\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690043325375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -280,9 +280,9 @@\n     text-decoration: underline;\n }\n \n .source span a {\n-\n+    color: #1f1f1f;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690043331257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -280,9 +280,9 @@\n     text-decoration: underline;\n }\n \n .source span a {\n-    color: #1f1f1f;\n+    color: inherit\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690043444165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -280,9 +280,9 @@\n     text-decoration: underline;\n }\n \n .source span a {\n-    color: inherit\n+    color: inherit;\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690120868631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -336,9 +336,9 @@\n     display: none;\n    \n }\n .flex-display {\n-    display: flex;\n+    display: flex Im !important;\n }\n \n .not-found h1 {\n     font-size: 64px;\n"
+                },
+                {
+                    "date": 1690120874341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -336,9 +336,9 @@\n     display: none;\n    \n }\n .flex-display {\n-    display: flex Im !important;\n+    display: flex !important;\n }\n \n .not-found h1 {\n     font-size: 64px;\n"
+                },
+                {
+                    "date": 1690121188106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -326,16 +326,14 @@\n     border: 1px solid var(--red) !important;\n }\n \n .not-found {\n-    display: flex;\n+    display: none;\n     flex-direction: column;\n     gap: 30px;\n     width: 50%;\n     text-align: center;\n     margin: 10% auto;\n-    display: none;\n-   \n }\n .flex-display {\n     display: flex !important;\n }\n"
+                },
+                {
+                    "date": 1690121223500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -326,14 +326,15 @@\n     border: 1px solid var(--red) !important;\n }\n \n .not-found {\n-    display: none;\n+    display: flex;\n     flex-direction: column;\n     gap: 30px;\n     width: 50%;\n     text-align: center;\n     margin: 10% auto;\n+    display: none;\n }\n .flex-display {\n     display: flex !important;\n }\n"
                 }
             ],
             "date": 1689878330011,

@@ -257,6 +257,33 @@ ul {
     padding: 0 20px;
 }
 
+hr {
+    text-align: center;
+    margin: 0 auto;
+    width: 65%;
+    border: 1px solid var(--lighter-grey);
+}
+
+.description ul p {
+    font-size: 18px;
+}
+
+.source {
+    display: flex;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-left: 15%;
+}
+
+.source p {
+    padding: 0 20px;
+    text-decoration: underline;
+}
+
+.source span a {
+    color: inherit;
+}
+
 
 /* Dynamic Styles */
 
@@ -307,10 +334,9 @@ ul {
     text-align: center;
     margin: 10% auto;
     display: none;
-   
 }
 .flex-display {
-    display: flex;
+    display: flex !important;
 }
 
 .not-found h1 {
@@ -385,6 +411,10 @@ input[type="text"].dark {
     .empty {
         left: 0;
     }
+    .source {
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (min-width:580px) and (max-width:768px) {
@@ -424,7 +454,11 @@ input[type="text"].dark {
     .empty {
         left: 0;
     }
+    hr {
+        width: 90%;
+    }
 
+    
 
 }
 

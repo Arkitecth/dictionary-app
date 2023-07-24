@@ -29,7 +29,8 @@ class App {
                 if(this._text.value === "") {
                     this._ui.showTextErrorMessage(); 
                 } else {
-                    this._ui.hideTextErrorMessage(); 
+                    this._ui.hideTextErrorMessage();
+                    this._ui.createUi(this._text.value); 
                 }
             }
         })
@@ -44,6 +45,109 @@ class UI {
         this.font = font;
         this.moon = moon; 
         this.text = text;  
+        this.handler= new DataHandler(); 
+        this._id = 0; 
+    }
+
+
+
+    loadNotFound() {
+        document.querySelector('.not-found').classList.add('flex-display')
+    }
+
+    removeNotFound() {
+        document.querySelector('.not-found').classList.remove('flex-display')
+    }
+
+    createWordView(word,phonetic) {
+        let section = document.createElement('section');
+        section.classList.add('word-view') 
+        section.innerHTML = `
+            <div class="word-group">
+            <h1>${word}</h1>
+            <p>${phonetic}</p>
+        </div>
+        <img class="icon-play" src="assets/images/icon-play.svg" alt="icon-play">
+        `
+        document.querySelector('main').appendChild(section); 
+    }
+
+
+    createPartOfSpeech(speechPart) {
+        let div = document.createElement('div');
+        div.classList.add('speech-part-group'); 
+        div.innerHTML = `
+        <p class="speech-part">${speechPart}</p>
+        <div class="grey-rule"></div>
+        `
+        document.querySelector('main').appendChild(div); 
+    }
+
+    createDefinitions(definitions) {
+        let section = document.createElement('section');
+        section.classList.add('description', `a-${this._id}`);
+        section.innerHTML = `
+        <p>Meaning</p>
+          <ul id="b${this._id}">
+          </ul>
+        `
+       ; 
+       document.querySelector('main').appendChild(section); 
+    
+        //   Add List Item to Dom
+       definitions.forEach((element) => {
+        let li = document.createElement('li'); 
+        let listItem = element.definition; 
+        li.innerHTML = listItem; 
+        document.querySelector(`#b${this._id}`).appendChild(li); 
+     })
+     
+    }
+
+    createSynonyms(synonyms) {
+        if(synonyms.length != 0) {
+            console.log(synonyms);
+            let description =  document.querySelector(`.description.a-${this._id}`);
+            let synonymn = document.createElement('p'); 
+            synonymn.classList.add('synonymn');
+            synonyms.forEach((element) => {
+                synonymn.innerHTML = `Synonyms <span>${element}</span>`   
+            })
+            description.appendChild(synonymn)
+        }
+    }
+    
+
+
+    playAudio() {
+        document.querySelector('.icon-play').addEventListener('click', () => {
+            let audio = new Audio(this.handler.getAudioPart()); 
+            audio.play(); 
+        })
+    }
+
+
+   async createUi(word) {
+        try {
+            let newWord = await this.handler.getWord(word); 
+            let phonetic = this.handler.getPhonetic();
+            let meanings = this.handler.getMeaning();
+            this.removeNotFound(); 
+            console.log(newWord)
+            this.createWordView(newWord, phonetic); 
+            this.playAudio(); 
+            meanings.forEach((meaning) => {
+                let speechPart = meaning.partOfSpeech;
+                this.createPartOfSpeech(speechPart); 
+                this.createDefinitions(meaning.definitions)
+                this.createSynonyms(meaning.synonyms);
+                this._id += 1; 
+            })
+           
+        } 
+        catch {
+            this.loadNotFound();
+        }
     }
     
     arrowDownModal() {
@@ -77,5 +181,70 @@ class UI {
 
 }
 
+class DataHandler {
+    constructor() {
+        this._endpoint = `https://api.dictionaryapi.dev/api/v2/entries/en/`; 
+        this._data = undefined;
+    }
+
+    async getWord(word) {
+        try {
+            const res = await fetch(`${this._endpoint}${word}`)
+            const data = await res.json();
+            if(!res.ok) {
+                throw new Error('Request Failed'); 
+            }
+            this._data = data; 
+            console.log(data) 
+        
+            return data[0].word;
+        } catch (error) {
+            throw error; 
+        }
+      
+    }
+    
+    getPhonetic() {
+        let audioEndPoint =  `https://api.dictionaryapi.dev/media/pronunciations/en/${this._data[0].word}-uk.mp3`
+        let phoneticWord = this._data[0].word; 
+
+        if(this._data[0].phonetic === undefined) {
+            // Loop Through Phonetic Data Array of Object
+            this._data[0].phonetics.forEach((phonetic) => {
+                if(phonetic.text !== "" && phonetic.audio === audioEndPoint) {
+                    phoneticWord = phonetic.text; 
+                }
+            })
+            return phoneticWord
+        } else {
+            return this._data[0].phonetic; 
+        }
+    }
+
+    getAudioPart() {
+        let audioEndPoint =  `https://api.dictionaryapi.dev/media/pronunciations/en/${this._data[0].word}-uk.mp3`
+            // Loop Through Phonetic Data Array of Object
+            this._data[0].phonetics.forEach((phonetic) => {
+                if(phonetic.audio !== "") {
+                    audioEndPoint = phonetic.audio; 
+                }
+            })
+        return audioEndPoint; 
+    }
+    getMeaning() {
+        let meaningList = [] 
+        this._data[0].meanings.forEach((meaning) => {
+            meaningList.push(meaning)
+        })
+        return meaningList; 
+    }
+    
+
+}
+
+
+
+
 const app = new App(); 
+const data = new DataHandler(); 
 app.run(); 
