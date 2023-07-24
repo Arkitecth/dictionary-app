@@ -59,6 +59,13 @@ class UI {
         document.querySelector('.not-found').classList.remove('flex-display')
     }
 
+    clearUI() {
+        document.querySelector('main').remove(); 
+        let main = document.createElement('main');
+        let search = document.querySelector('.search');  
+        document.querySelector('body').insertBefore(main, search.nextElementSibling); 
+    }
+
     createWordView(word,phonetic) {
         let section = document.createElement('section');
         section.classList.add('word-view') 
@@ -116,8 +123,19 @@ class UI {
             description.appendChild(synonymn)
         }
     }
-    
 
+    createExamples(defintions) {
+        defintions.forEach((description) => {
+            if(description.example != '' && description.example != undefined) {
+                let ul =  document.querySelector(`#b${this._id}`);
+                let example = document.createElement('p'); 
+                example.classList.add('example');
+                example.textContent = description.example; 
+                ul.appendChild(example)
+            }
+        })
+       
+    }
 
     playAudio() {
         document.querySelector('.icon-play').addEventListener('click', () => {
@@ -126,8 +144,37 @@ class UI {
         })
     }
 
+    appendHeadingRule() {
+        let hr = document.createElement('hr'); 
+        document.querySelector('main').appendChild(hr); 
+    }
+
+
+    showSource() {
+        let div = document.createElement('div'); 
+        div.classList.add('source'); 
+        div.innerHTML = `
+         <p>Source </p>
+         <span>
+           <img class="new-window" src="assets/images/icon-new-window.svg" alt="new-window">
+         </span>
+        `
+        document.querySelector('main').appendChild(div); 
+        this.handler.getSource().forEach((source) => {
+            let anchor = document.createElement('a'); 
+            let img = document.querySelector('new-window'); 
+            let sourceDiv = document.querySelector('.source'); 
+            anchor.textContent = source; 
+            anchor.style.color = "#757575"; 
+            anchor.setAttribute('href', source)
+            sourceDiv.insertBefore(anchor, img); 
+        })
+       
+    }
+
 
    async createUi(word) {
+    this.clearUI(); 
         try {
             let newWord = await this.handler.getWord(word); 
             let phonetic = this.handler.getPhonetic();
@@ -137,12 +184,14 @@ class UI {
             this.createWordView(newWord, phonetic); 
             this.playAudio(); 
             meanings.forEach((meaning) => {
-                let speechPart = meaning.partOfSpeech;
-                this.createPartOfSpeech(speechPart); 
-                this.createDefinitions(meaning.definitions)
+                this.createPartOfSpeech(meaning.partOfSpeech); 
+                this.createDefinitions(meaning.definitions);
+                this.createExamples(meaning.definitions); 
                 this.createSynonyms(meaning.synonyms);
                 this._id += 1; 
             })
+            this.appendHeadingRule(); 
+            this.showSource(); 
            
         } 
         catch {
@@ -237,6 +286,10 @@ class DataHandler {
             meaningList.push(meaning)
         })
         return meaningList; 
+    }
+
+    getSource() {
+        return this._data[0].sourceUrls; 
     }
     
 

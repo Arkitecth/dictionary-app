@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 50,
+            "activePatchIndex": 60,
             "patches": [
                 {
                     "date": 1689876075850,
@@ -208,6 +208,46 @@
                 {
                     "date": 1690148776593,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   <!-- Navigation -->\n   <nav>\n     <img src=\"assets/images/logo.svg\" alt=\"logo\">\n \n-    <div class=\"right\">\n+    <div id=\"\" class=\"right\">\n       <div class=\"fonts\">\n         <p>Sans-Serif</p>\n         <img class=\"arrow-down\" src=\"assets/images/icon-arrow-down.svg\" alt=\"icon-arrow-down\"> \n         <div class=\"modal\">\n"
+                },
+                {
+                    "date": 1690218386573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,17 +90,17 @@\n \n     <hr> \n \n \n-    <div class=\"source\">\n-      <p>Source </p>\n-      <span>\n-        <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n-        <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n-      </span>\n+   -->\n+   <div class=\"source\">\n+    <p>Source </p>\n+    <span>\n+      <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n+      <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n+    </span>\n \n-    </div> -->\n-  \n+  </div> \n \n   \n \n   </main>\n"
+                },
+                {
+                    "date": 1690218396905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,10 +88,8 @@\n       </ul>\n     </section>\n \n     <hr> \n-\n-\n    -->\n    <div class=\"source\">\n     <p>Source </p>\n     <span>\n"
+                },
+                {
+                    "date": 1690218489048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n     </section>\n \n     <hr> \n    -->\n-   <div class=\"source\">\n+   <div class=\"source none\">\n     <p>Source </p>\n     <span>\n       <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n       <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n"
+                },
+                {
+                    "date": 1690218531782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,12 @@\n         <p class=\"example\">Keyboarding is the part of this job i hate the most.</p>\n       </ul>\n     </section>\n \n+   \n+   -->\n+   <div class=\"source\">\n     <hr> \n-   -->\n-   <div class=\"source none\">\n     <p>Source </p>\n     <span>\n       <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n       <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n"
+                },
+                {
+                    "date": 1690218626721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,10 +89,11 @@\n     </section>\n \n    \n    -->\n+   <hr> \n    <div class=\"source\">\n-    <hr> \n+  \n     <p>Source </p>\n     <span>\n       <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n       <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n"
+                },
+                {
+                    "date": 1690218665506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,19 +89,10 @@\n     </section>\n \n    \n    -->\n-   <hr> \n-   <div class=\"source\">\n-  \n-    <p>Source </p>\n-    <span>\n-      <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n-      <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n-    </span>\n+ \n \n-  </div> \n-\n   \n \n   </main>\n \n"
+                },
+                {
+                    "date": 1690218906867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \n   \n \n   </main>\n-\n+<hr>\n   <div class=\"not-found\">\n     <h1>😕</h1>\n     <h2>No Definitions Found</h2>\n     <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</p>\n"
+                },
+                {
+                    "date": 1690218919105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \n   \n \n   </main>\n-<hr>\n+\n   <div class=\"not-found\">\n     <h1>😕</h1>\n     <h2>No Definitions Found</h2>\n     <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</p>\n"
+                },
+                {
+                    "date": 1690220287708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,10 +89,18 @@\n     </section>\n \n    \n    -->\n- \n+   <hr> \n+   <div class=\"source\">\n+    <p>Source </p>\n+    <span>\n+      <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n+      <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n+    </span>\n \n+  </div> \n+\n   \n \n   </main>\n \n"
+                },
+                {
+                    "date": 1690220383297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,17 +89,17 @@\n     </section>\n \n    \n    -->\n-   <hr> \n+   <!-- <hr> \n    <div class=\"source\">\n     <p>Source </p>\n     <span>\n       <a href=\"https://en.wiktionary.org/wiki/keyboard\">https://en.wiktionary.org/wiki/keyboard</a> \n       <img src=\"assets/images/icon-new-window.svg\" alt=\"new-window\">\n     </span>\n \n-  </div> \n+  </div>  -->\n \n   \n \n   </main>\n"
                 }
             ],
             "date": 1689876075850,

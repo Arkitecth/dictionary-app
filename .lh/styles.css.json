@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 232,
+            "activePatchIndex": 236,
             "patches": [
                 {
                     "date": 1689878330011,
@@ -936,6 +936,22 @@
                 {
                     "date": 1690121223500,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -326,14 +326,15 @@\n     border: 1px solid var(--red) !important;\n }\n \n .not-found {\n-    display: none;\n+    display: flex;\n     flex-direction: column;\n     gap: 30px;\n     width: 50%;\n     text-align: center;\n     margin: 10% auto;\n+    display: none;\n }\n .flex-display {\n     display: flex !important;\n }\n"
+                },
+                {
+                    "date": 1690218500250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -272,8 +272,9 @@\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n     margin-left: 15%;\n+    display: none;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690218660672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -272,9 +272,8 @@\n     display: flex;\n     padding: 20px 0;\n     font-size: 14px;\n     margin-left: 15%;\n-    display: none;\n }\n \n .source p {\n     padding: 0 20px;\n"
+                },
+                {
+                    "date": 1690220367499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -280,9 +280,9 @@\n     text-decoration: underline;\n }\n \n .source span a {\n-    color: inherit;\n+    color: var(--dark-grey);\n }\n \n \n /* Dynamic Styles */\n"
+                },
+                {
+                    "date": 1690220424687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -280,9 +280,9 @@\n     text-decoration: underline;\n }\n \n .source span a {\n-    color: var(--dark-grey);\n+    color: inherit;\n }\n \n \n /* Dynamic Styles */\n"
                 }
             ],
             "date": 1689878330011,
