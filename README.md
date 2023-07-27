@@ -1,4 +1,4 @@
-# Frontend Mentor - Dictionary web app solution
+# Dictionary web app
 
 A Dictionary Applciation Featuring OOP JS. 
 
