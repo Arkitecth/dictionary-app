@@ -294,10 +294,5 @@ class DataHandler {
     
 
 }
-
-
-
-
-const app = new App(); 
-const data = new DataHandler(); 
+const app = new App();  
 app.run(); 
